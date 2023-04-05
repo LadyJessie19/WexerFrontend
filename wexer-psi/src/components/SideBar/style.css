@@ -1,0 +1,29 @@
+nav{
+    height: 100vh;
+    width: 5vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+#topNavBar{
+    width: 5vw;
+    height: 12vh;
+    background-color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottomNavBar{
+    background-color: #00995D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem 0.5rem;
+    height: 88vh;
+}
