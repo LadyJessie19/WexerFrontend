@@ -16,6 +16,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 3px 0px 8px rgb(179, 179, 179);
+    z-index: 3;
 }
 
 #bottomNavBar{
