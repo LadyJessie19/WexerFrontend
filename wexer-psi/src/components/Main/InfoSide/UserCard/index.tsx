@@ -2,7 +2,7 @@
 
 const UserCard = () => {
   return (
-    <div id="userCard">
+    <div className="sideCard">
       <div>
         <h4>Identificação do paciente</h4>
       </div>

@@ -35,12 +35,10 @@
 #searchSpan{
     padding: 1rem 4rem;
     border-radius: 20px;
-    border: 1px solid grey;
     font-size: 14px;
 }
 
 #infoSide{
-    border: 1px solid black;
     width: 23vw;
     margin-left: 1.5rem;
     display: flex;
@@ -50,27 +48,48 @@
 }
 
 #medicalRecordSide{
-    border: 1px solid black;
     width: 62vw;
     height: 100%;
     position: absolute;
     left: 450px;
 }
 
-#userCard{
+.sideCard{
+    position: relative;
     width: 21vw;
-    height: 54vh;
     border-radius: 17px;
     background-color: #ffff;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     padding: 10px 0px 1px 30px;
     box-shadow: 1px 1px 6px rgb(201, 200, 200);
 }
 
-#userCard>div{
+.sideCard>div{
     font-size: 18px;
+    font-weight: 500;
+}
+
+div>span{
+    color: #00995D;
+}
+
+#goalText{
+    padding: 0 0 20px 1px;
+}
+
+.buttonSide{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.buttonSide>button{
+    border: 1px solid #00995D;
+    border-radius: 9px;
+    background-color: #ffff;
+    box-shadow: 1px 1px 2px rgb(160, 160, 160);
 }
 
 #newNoteBar{
@@ -87,16 +106,71 @@
 
 #newNoteBar>input{
     width: 90%;
-    padding: 14px 7px;
-    border-radius: 14px;
+    padding: 14px 12px;
+    border-radius: 24px;
+    font-size: 15px;
+    margin: 15px 0 8px 0;
+}
+
+#newNoteBar>hr{
+    width: 100%;
+    opacity: .3;
+    margin: 20px 0;
 }
 
 #buttonsNewNote{
     display: flex;
     gap: 7rem;
+    padding: 1rem;
 }
   
 .buttonNewNote{
     display: flex;
     gap: .5rem;
+}
+
+.marginBottom{
+    margin-bottom: 100px;
+}
+
+#divisionFilter{
+    display: flex;
+    gap: .5rem;
+    margin: 15px 0 15px 0;
+}
+
+#divisionFilter>hr{
+    width: 52vw;
+}
+.cardName{
+    background-color: #ffff;
+    border-radius: 0 16px 16px 0;
+    border-left: 6px solid #00995D;
+    padding: 1.5rem;
+    box-shadow: 1px 1px 7px rgb(211, 210, 210);
+    margin-top: 50px;
+    position: relative;
+}
+.cardName>img{
+    position: absolute;
+    top: -25px;
+}
+.cardName>button{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background-color: #ffff;
+    border: none;
+    font-size: 35px;
+}
+.cardName>button:hover{
+    font-size: 37px;
+}
+
+#backToTop{
+    width: 62vw;
+    text-align: center;
+    height: 100px;
+    font-size: 23px;
+    margin-top: 50px;
 }

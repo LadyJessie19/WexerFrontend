@@ -3,7 +3,7 @@ import React from 'react'
 const NewNoteBar = () => {
   return (
     <div id='newNoteBar'>
-        <input type="text" />
+        <input type="text" placeholder='Faça suas anotações pessoais aqui...' />
         <hr />
         <div id='buttonsNewNote'>
             <div className='buttonNewNote'>

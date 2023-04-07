@@ -1,5 +1,5 @@
 header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 5vw;
     width: 93.5vw;
@@ -9,7 +9,7 @@ header{
     justify-content: space-between;
     background-color: white;
     box-shadow: 5px 3px 7px rgb(224, 224, 224);
-    z-index: 1;
+    z-index: 2;
 }
 
 header>div{

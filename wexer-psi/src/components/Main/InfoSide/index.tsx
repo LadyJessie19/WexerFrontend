@@ -1,10 +1,13 @@
+import GoalsCard from "./GoalsCard"
+import ServiceCard from "./ServiceCard"
 import UserCard from "./UserCard"
 
 const InfoSide = () => {
   return (
     <div id='infoSide'>
         <UserCard />
-        <UserCard />
+        <ServiceCard />
+        <GoalsCard />
     </div>
   )
 }
