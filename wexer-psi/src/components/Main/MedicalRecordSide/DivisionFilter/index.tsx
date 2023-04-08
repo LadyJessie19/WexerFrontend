@@ -4,7 +4,7 @@ const DivisionFilter = () => {
   return (
     <div id='divisionFilter'>
         <hr/>
-        <span>Filtrar por: <strong>Todos</strong> <img src="/react.svg" width={'10px'} /></span>
+        <span>Filtrar por: <strong>Todos</strong> <img src="/main/Mask(1).svg" width={'10px'} /></span>
     </div>
   )
 }

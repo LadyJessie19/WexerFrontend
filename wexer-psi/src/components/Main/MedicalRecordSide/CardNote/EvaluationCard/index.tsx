@@ -1,7 +1,11 @@
+import './style.css'
 const EvaluationCard = () => {
     return (
-      <div className="cardName">
-          <img src="/vite.svg" width={'50px'} />
+      <div className="cardName evaluationCard">
+        <div className='divImgCard evaluationLogo'>
+          <img src="/main/note.svg" width={'26px'} />
+          <div>&nbsp;</div>
+        </div>
           <button> ... </button>
           <div>
           <h3>Avaliação Psicológica</h3>

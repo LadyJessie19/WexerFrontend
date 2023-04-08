@@ -6,7 +6,10 @@ const SearchBar = () => {
         <span>Prontuário </span>
       </div>
       <div id="rightSearchBar">
-        <span id="searchSpan">O que você está procurando?</span>
+        <span id="searchSpan">
+          <input type="text" placeholder="O que você está procurando?" />
+          <span><img src="/main/magnifyingGlass.svg" width={'25px'} /></span>
+        </span>
         
       </div>
     </div>

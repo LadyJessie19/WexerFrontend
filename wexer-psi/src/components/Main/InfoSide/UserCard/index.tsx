@@ -8,23 +8,23 @@ const UserCard = () => {
       </div>
       <div>
         <div>
-          <img src="/react.svg" width={'20px'} />
-          <span>Paciente</span>
+          <img src="/side-section/user.svg" width={'14px'} />
+          <span>  Paciente</span>
           <p>Ana Ester Resende</p>
         </div>
         <div>
-          <img src="/react.svg" width={'20px'} />
-          <span>Nascimento</span>
+          <img src="/side-section/date.svg" width={'14px'} />
+          <span> Nascimento</span>
           <p>10/09/2000</p>
         </div>
         <div>
-          <img src="/react.svg" width={'20px'} />
-          <span>Profissão</span>
+          <img src="/side-section/bag.svg" width={'14px'} />
+          <span> Profissão</span>
           <p>Designer</p>
         </div>
         <div>
-          <img src="/react.svg" width={'20px'} />
-          <span>Escolaridade</span>
+          <img src="/side-section/doc.svg" width={'14px'} />
+          <span> Escolaridade</span>
           <p>Superior incompleto</p>
         </div>                
       </div>

@@ -6,10 +6,10 @@ import SectionCard from './SectionCard'
 const CardNote = () => {
   return (
     <div>
+        {<SectionCard/>}
+        {<FactCard/>}
         {<AttachmentCard/>}
         {<EvaluationCard/>}
-        {<FactCard/>}
-        {<SectionCard/>}
     </div>
   )
 }

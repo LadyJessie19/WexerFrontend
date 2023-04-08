@@ -18,3 +18,7 @@ header>div{
     gap: 1rem;
     margin: 0px 20px;
 }
+
+#rightMainBar>span{
+    font-size: 25px;
+}

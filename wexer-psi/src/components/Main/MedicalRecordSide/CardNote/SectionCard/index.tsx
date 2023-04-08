@@ -1,7 +1,11 @@
+import './style.css'
 const SectionCard = () => {
   return (
-    <div className="cardName">
-        <img src="/vite.svg" width={'50px'} />
+    <div className="cardName sectionCard">
+        <div className='divImgCard sectionLogo'>
+            <img src="/main/guy.svg" width={'28px'} />
+            <div>&nbsp;</div>
+        </div>
         <button> ... </button>
         <div>
         <h3>Sessão</h3>

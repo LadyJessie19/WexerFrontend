@@ -5,12 +5,12 @@ const MainBar = () => {
     <>
       <header>
         <div id='leftMainBar'>
-         <img src="/react.svg" width={'50px'}/>
+         <img src="/main-bar/menu.svg" width={'32px'}/>
          <span>Voltar para Home</span>
         </div>
         <div id='rightMainBar'>
-         <span>Bem vindo(a), Daniel</span>
-         <img src="/react.svg" width={'20px'} />
+         <span>Bem vindo(a), <strong>Daniel</strong></span>
+         <img src="/main-bar/Mask.svg" width={'16px'} />
         </div>
       </header>
     </>

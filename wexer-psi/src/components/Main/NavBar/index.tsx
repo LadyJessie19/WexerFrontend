@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
     <div id="navBar">
-        <img src="/react.svg" width={'20px'} />
+        <img src="/main/Mask(2).svg" width={'9px'} />
         <span>Home</span>
         <span>|</span>
         <span><strong>Avaliação:</strong>  Trânsito</span>

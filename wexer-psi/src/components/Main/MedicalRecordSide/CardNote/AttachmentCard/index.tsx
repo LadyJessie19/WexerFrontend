@@ -1,7 +1,12 @@
+import './style.css'
+
 const AttachmentCard = () => {
     return (
-      <div className="cardName">
-          <img src="/vite.svg" width={'50px'} />
+      <div className="cardName attachmentCard">
+        <div className='divImgCard attachmentLogo'>
+          <img src="/main/clip.svg" width={'30px'} />
+          <div>&nbsp;</div>
+        </div>
           <button> ... </button>
           <div>
           <h3>Anexo</h3>

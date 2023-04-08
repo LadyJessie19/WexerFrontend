@@ -1,7 +1,11 @@
+import './style.css'
 const FactCard = () => {
     return (
-      <div className="cardName">
-          <img src="/vite.svg" width={'50px'} />
+      <div className="cardName factCard">
+          <div className='divImgCard factLogo'>
+            <img src="/main/pin.svg" width={'28px'} />
+            <div>&nbsp;</div>
+        </div>
           <button> ... </button>
           <div>
           <h3>Fato relevante</h3>

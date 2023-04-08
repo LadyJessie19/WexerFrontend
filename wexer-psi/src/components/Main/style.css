@@ -36,6 +36,7 @@
     padding: 1rem 4rem;
     border-radius: 20px;
     font-size: 14px;
+    border: 1px solid darkgray;
 }
 
 #infoSide{
@@ -167,6 +168,19 @@ div>span{
     font-size: 37px;
 }
 
+.divImgCard{
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divImgCard>img{
+    margin-left: 4px;
+}
 #backToTop{
     width: 62vw;
     text-align: center;

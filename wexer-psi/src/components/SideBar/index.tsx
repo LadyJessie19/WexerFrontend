@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 
 const index = () => {
@@ -6,13 +5,13 @@ const index = () => {
     <>
         <nav>
           <div id="topNavBar">
-            <img src="/vite.svg" />
+            <img src="/side-bar/logo.svg" />
           </div>
           <div id="bottomNavBar">
-            <img src="/vite.svg" width={'32px'} />
-            <img src="/react.svg" width={'32px'}/>
-            <img src="/vite.svg" width={'32px'}/>
-            <img src="/react.svg" width={'32px'}/>
+            <img src="/side-bar/people.svg" width={'24px'} />
+            <img src="/side-bar/todo-fill.svg" width={'24px'}/>
+            <img src="/side-bar/Vector.svg" width={'24px'}/>
+            <img src="/side-bar/settings-2.svg" width={'24px'}/>
           </div>
         </nav>
     </>
