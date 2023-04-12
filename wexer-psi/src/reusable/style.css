@@ -1,0 +1,126 @@
+#reusableSpace{
+    width: 70vw;
+    background-color: beige;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+#buttonReport{
+    background-color: white;
+    border-radius: 14px;
+    padding: 1rem;
+    border: none;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+#buttonReport:hover{
+    border: 1px solid #017849;
+}
+
+.selectType{
+    width: 500px;
+    border-radius: 35px;
+    padding: .75rem 2rem .75rem 2rem;
+    outline: none;
+    font-size: 16px;
+}
+#backInterview{
+    background-color: white;
+    width: 16vw;
+    border: 2px solid #017849;
+    border-radius: 20px;
+    padding: 1rem;
+}
+#headerInterview{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 10px;
+}
+#bodyInterview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    margin-bottom: 10px;
+}
+#footerInterview{
+    display: flex;
+    justify-content: center;
+}
+#footerInterview>button{
+    color: #017849;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgb(187, 187, 187);
+    padding: .3rem 2rem;
+    font-weight: 600;
+    border-radius: 11px;
+}
+#footerInterview>button:hover{
+    cursor: pointer;
+    background-color: #017849;
+    color: white;
+}
+.simpleCard{
+    background-color: white;
+    border-radius: 30px;
+    width: fit-content;
+    padding: .5rem 1rem;
+    font-size: 12px;
+}
+.simpleCard:hover{
+    border: 1px solid #017849;
+}
+#headerSimpleCard{
+    display: flex;
+    gap: .5rem;
+}
+#tinyBarButtons{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.backButton{
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 1rem;
+    width: 141px;
+    height: 115px;
+    text-align: center;
+}
+.imgButton{
+    position: relative;
+}
+.imgIconButton{
+    position: absolute;
+    z-index: 1;
+    right: 59px;
+    bottom: 29px;
+}
+.divTextButton{
+    font-size: 14px;
+    font-weight: 500;
+}
+.backButton:hover{
+    border: 1px solid #017849;
+}
+
+.backCardInfo{
+    background-color: #ffffff;
+    border-radius: 14px;
+    padding: 1rem;
+    width: 250px;
+    font-size: 14px;
+    font-weight: 300;
+}
+.backCardInfo>p{
+    font-weight: 600;
+}
+
+.footerCardInfo{
+    display: flex;
+    justify-content: space-between;
+}

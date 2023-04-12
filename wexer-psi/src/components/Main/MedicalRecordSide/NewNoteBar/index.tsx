@@ -1,9 +1,6 @@
-import React from 'react'
-
 const NewNoteBar = () => {
   return (
     <div id='newNoteBar'>
-        <img src="/main/pencil.svg" />
         <input type="text" placeholder='Faça suas anotações pessoais aqui...' />
         <hr />
         <div id='buttonsNewNote'>

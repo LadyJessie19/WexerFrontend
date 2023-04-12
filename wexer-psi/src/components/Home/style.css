@@ -1,0 +1,111 @@
+.dFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#greenBanner{
+    position: absolute;
+    width: 792px;
+    height: 303px;
+    top: 0px;
+    background-color: #017849;
+    border-radius: 0px 0px 16px 16px;
+}
+
+#logoBanner{
+    position: relative;
+    top: 73px;
+    margin: 10px;
+}
+
+#woman{
+    position: relative;
+    right: 190px;
+}
+
+#textBanner{
+    position: relative;
+    width: 310px;
+    left: 370px;
+    bottom: 100px;
+    text-align: center;
+    color: white;
+}
+
+#textBanner>h1{
+    font-weight: 600;
+    font-family: Comfortaa !important;
+}
+#textBanner>p{
+    font-weight: 300;
+    font-family: Comfortaa !important;
+}
+
+#backPatients{
+    width: 792px;
+    height: 594px;
+    background-color: white;
+    position: absolute;
+    top: 334px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headerPatients{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+table{
+    border: 1px solid grey;
+    width: 744px;
+    height: 355px;
+    text-align: center;
+}
+td{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.pagination{
+    position: absolute;
+    bottom: -50px;
+    left: 470px;
+    display: flex;
+    gap: .5rem;
+    list-style: none;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 557px;
+    height: 400px;
+  }
+  #greyGradient{
+    position: relative;
+    left: 170px;
+    z-index: -1;
+  }
+  #womanDesktop{
+    position: relative;
+    left: 30px;
+  }
