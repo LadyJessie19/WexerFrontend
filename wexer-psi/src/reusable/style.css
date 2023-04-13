@@ -96,7 +96,6 @@
 }
 .imgIconButton{
     position: absolute;
-    z-index: 1;
     right: 59px;
     bottom: 29px;
 }

@@ -1,3 +1,4 @@
+import './style.css'
 import { useState } from 'react'
 import EvaluationSelect from './EvaluationSelect'
 import InterviewSelect from './InterviewSelect'
@@ -9,7 +10,7 @@ import ReportButton from './ReportButton'
 import TestCard from './TestCard'
 import RichTextBox from './TextBox'
 import TinyBarButtons from './TinyBarButtons'
-import './style.css'
+import Modals from '../Modals'
 
 const Reusable = () => {
     const [text, setText] = useState('Digite aqui')
@@ -35,6 +36,9 @@ const Reusable = () => {
             <MyClientsBar />
             <hr />
             <RichTextBox value={text} onChange={setText} />
+            <hr />
+            <Modals />
+            <hr />
         </div>
     </>
   )
