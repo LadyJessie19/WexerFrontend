@@ -1,0 +1,117 @@
+main{
+    background-color: #00995D;
+    width: 26vw;
+    position: absolute;
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    place-items: center;
+    border-radius: 14px;
+}
+
+#wexerLogoBack{
+    position: absolute;
+    z-index: -1;
+    max-height: 98vh;
+}
+
+#loginScreen{
+    width: 97vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputSpace{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.whiteBack{
+    width: 97vw;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whiteBack>main{
+    background-color: white;
+    width: 26vw;
+    position: absolute;
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    place-items: center;
+    border-radius: 14px;
+}
+
+#infoPassword{
+    display: flex;
+    flex-direction: column;
+}
+
+#registrationBack{
+    width: 33%;
+    background-color: #017849;
+    margin: 50px auto;
+    padding: 14px;
+    color: white;
+    border-radius: 14px;
+}
+
+#registrationBack>div>hr{
+    width: 32vw;
+    margin-top: -10px;
+}
+
+#regHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+}
+
+.inputRegLine{
+    display: flex;
+    gap: 1rem;
+}
+.inputRegLine>div>label{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    width: 210px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.inputRegLine>div>label>input{
+    padding: 5px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+
+.dFlexRow{
+    display: flex;
+    flex-direction: row !important;
+    gap: 2rem;
+}
+
+.inputShort{
+    width: 80px !important;
+}
+.labelShort{
+    width: 80px !important;
+}
+
+select{
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.margin-top{
+    margin-top: 15px;
+}

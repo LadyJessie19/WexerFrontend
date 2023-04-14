@@ -1,19 +1,11 @@
-import Home from './components/Home'
-import Main from './components/Main'
-import MainBar from './components/MainBar'
-import SideBar from './components/SideBar'
-import Reusable from './reusable'
-import { userData, postData } from './services/data'
+import Login from "./Begin"
+import Major from "./Major"
 
 function App() {
-  userData()
   return (
     <div className="App">
-      <SideBar/>
-      <MainBar />
-      {/* <Main/> */}
-      {/* <Home /> */}
-      <Reusable />
+      <Major />
+      {/* <Login /> */}
     </div>
   )
 }
