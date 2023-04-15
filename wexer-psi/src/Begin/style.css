@@ -6,7 +6,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    place-items: center;
+    place-items: center !important;
     border-radius: 14px;
 }
 

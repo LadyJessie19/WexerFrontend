@@ -1,13 +1,13 @@
-import Login from "./Begin"
-import Major from "./Major"
+import Major from "./Major";
+import Begin from "./Begin";
 
 function App() {
   return (
-    <div className="App">
+    <>
+      {/* <Begin /> */}
       <Major />
-      {/* <Login /> */}
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

@@ -4,6 +4,7 @@ import Home from "../components/Home";
 import Main from "../components/Main";
 import Reusable from "../reusable";
 import PatientsScreen from "../components/PatientsScreen";
+import UserScreen from "../components/UserScreen";
 
 const Major = () => {
   return (
@@ -13,7 +14,8 @@ const Major = () => {
       {/* <Main/> */}
       {/* <Home /> */}
       {/* <Reusable /> */}
-      <PatientsScreen />
+      {/* <PatientsScreen /> */}
+      <UserScreen />
     </>
   );
 };

@@ -8,10 +8,10 @@ const Begin = () => {
   return (
     <>
       <img src="/login/logo.svg" id="wexerLogoBack" />
-      {/* <Login /> */}
+      <Login />
       {/* <RegName /> */}
       {/* <RegPassword /> */}
-      <Registration />
+      {/* <Registration /> */}
     </>
   );
 };

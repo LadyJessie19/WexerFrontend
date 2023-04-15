@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+#divHeader{
+    position: absolute;
+    top: 75px;
+    left: 120px;
+    font-weight: 500;
+    font-family: 'Confortaa';
+    font-size: 18px;
+}
+
+main{
+    position: absolute;
+    top: 75px;
+    left: 120px;
+}
+
+#mainHeader>h3{
+    font-weight: 500;
+    font-family: 'Comfortaa' !important;
+}
+
+section{
+    width: 85vw;
+    background-color: white;
+    padding: 14px;
+    margin-left: 100px;
+    margin-top: 130px;
+    border-radius: 14px;
+}
+
+#sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 85vw;
+  }
+  
+  th, td {
+    border: .5px solid rgb(228, 227, 227);
+    padding: 8px;
+    text-align: left;
+  }
+
+.dFlexRow{
+    display: flex;
+}
+
+#sectionHeader>div>span{
+    border-bottom: .5px solid lightgray;
+    border-right: .5px solid lightgray;
+    padding:  0 .5rem;
+    width: 150px;
+    height: 50px;
+    line-height: 7px;
+    text-align: center;
+}
+
+.bannerBody{
+    background-color: #017849;
+    padding: .5rem;
+    border-radius: 7px;
+    color: white;
+    margin-top: 30px;
+}
+
+#textArea{
+    height: 20vh;
+    width: 98%;
+}
+
+#obsSpace{
+    padding: .5rem;
+    margin: 20px;
+}
+
+#inputsGeneral{
+    width: 80vw;
+    padding: 2rem 2rem 0;
+}
+
+.inputsLine{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.inputSolo{
+    display: flex;
+    flex-direction: column;
+}
+.inputSolo>input{
+    min-width: 17vw;
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid lightgray;
+    outline: 0;
+}
