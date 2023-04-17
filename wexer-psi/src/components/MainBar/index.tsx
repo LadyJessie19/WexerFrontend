@@ -1,12 +1,15 @@
 import Menu from './Menu';
 import './style.css'
 
-const MainBar = () => {
+const MainBar = ({menuHandle}) => {
   return (
     <>
       <header>
         <div id='leftMainBar'>
-         <span><Menu/></span>
+         <span>
+          {/* <Menu/> */}
+          <img src="/main-bar/menu.svg" width={'32px'} onClick={menuHandle}/>
+          </span>
          <span>Voltar para Home</span>
         </div>
         <div id='rightMainBar'>

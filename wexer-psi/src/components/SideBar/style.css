@@ -1,6 +1,5 @@
 nav{
     height: 100vh;
-    width: 5vw;
     position: fixed;
     top: 0;
     left: 0;
@@ -10,13 +9,21 @@ nav{
     z-index: 3;
 }
 
-#topNavBar{
+.shortMenu{
     width: 5vw;
+}
+
+.largeMenu{
+    width: 15vw;
+}
+
+.topNavBar{
     height: 12vh;
     background-color:#ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     box-shadow: 3px 0px 8px rgb(179, 179, 179);
     z-index: 3;
 }
@@ -29,4 +36,31 @@ nav{
     gap: 2.5rem;
     padding: 3rem 0.5rem;
     height: 88vh;
+}
+
+div>span{
+    cursor: pointer;
+}
+
+.barLine{
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    padding: 0px 130px;
+}
+
+.barLine>div{
+    color: white;
+    font-size: 14px;
+}
+
+#greyBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(128, 128, 128, 0.473);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
 }

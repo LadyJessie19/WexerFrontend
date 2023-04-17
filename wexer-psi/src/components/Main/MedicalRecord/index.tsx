@@ -1,5 +1,5 @@
-import InfoSide from "../InfoSide"
-import MedicalRecordSide from "../MedicalRecordSide"
+import InfoSide from "./InfoSide"
+import MedicalRecordSide from "./MedicalRecordSide"
 import SearchBar from "./SearchBar"
 
 const MedicalRecord = () => {

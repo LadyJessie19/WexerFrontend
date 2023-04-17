@@ -1,0 +1,66 @@
+.backInterview{
+    padding: 1rem;
+    /* background-color: aquamarine; */
+    height: 100vh;
+}
+
+.bodyInterview{
+    padding: 1rem;
+    height: 90vh;
+    /* background-color: rgb(173, 124, 218); */
+}
+
+.headerInterview{
+    max-width: 60vw;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 21px 5px 5px 21px;
+    border-bottom: 1px solid grey;
+    border-left: 9px solid #00995D;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    padding-right: 5rem;
+}
+
+.headerInterview>div>h2{
+    color: #00995D;
+}
+
+.headerButtons{
+    display: flex;
+    gap: 1rem;
+}
+
+.innerBodyInterview{
+    padding: 2rem;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+    width: 62vw;
+}
+
+.innerBodyInterview>div>h2{
+    color: #00995D;
+}
+
+.textAreaBody{
+    width: 40vw;
+    padding: 1rem;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 9px rgb(221, 221, 221);
+}
+
+.ql-editor {
+    min-height: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  .footerInterview{
+    display: flex;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    margin-top: 50px;
+  }
+  
