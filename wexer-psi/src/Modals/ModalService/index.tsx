@@ -10,7 +10,7 @@ function ModalService() {
 
   return (
     <div>
-      <button onClick={handleModal}>Anotações</button>
+      <button onClick={handleModal}>Serviço</button>
       {isOpen && (
         <>
           <div className="modal-backdrop" onClick={handleModal}></div>
@@ -28,9 +28,21 @@ function ModalService() {
                 <p>114.559.886-78</p>
             </div>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                  <label>Data inicial 
+                    <input type="text" />
+                  </label>
+                </div>
+                <div>
+                <label>Serviço
+                    <input type="text" />
+                </label>
+                </div>
+                <div>
+                <label>Demandas e objetivos
+                    <textarea cols="30" rows="5"></textarea>
+                  </label>
+                </div>
             </div>
               <div>
                   <button>Salvar</button>

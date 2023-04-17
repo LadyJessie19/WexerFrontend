@@ -4,6 +4,7 @@ import ModalAttach from "./ModalAttach";
 import ModalEvaluation from "./ModalEvaluation";
 import ModalNotes from "./ModalNotes";
 import './style.css'
+import ModalService from "./ModalService";
 
 const Modals = () => {
   return (
@@ -14,6 +15,7 @@ const Modals = () => {
         <ModalAttach />
         <ModalEvaluation />
         <ModalNotes />
+        <ModalService />
       </div>
     </>
   );

@@ -1,16 +1,16 @@
 import "./style.css"
 import NavBar from './NavBar'
-import SearchBar from "./SearchBar"
-import InfoSide from "./InfoSide"
-import MedicalRecordSide from "./MedicalRecordSide"
+import Notes from "./Notes"
+import MedicalRecord from "./MedicalRecord"
+import EvaluationSection from "./EvaluationSection"
 
 const Main = () => {
   return (
     <div className="MainComp">
         <NavBar />
-        <SearchBar />
-        <InfoSide />
-        <MedicalRecordSide />
+        <EvaluationSection />
+        {/* <Notes /> */}
+        {/* <MedicalRecord /> */}
     </div>
   )
 }

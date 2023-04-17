@@ -15,10 +15,6 @@ const FieldsData = () => {
                       <label>Data de nascimento</label>
                       <input type="text" />
                   </div>
-                  <div className="inputSolo">
-                      <label>Data de nascimento</label>
-                      <input type="text" />
-                  </div>
               </div>
               <div className="inputsLine">
                   <div className="inputSolo">
@@ -29,6 +25,7 @@ const FieldsData = () => {
                   <label>Sexo/Gênero</label>
                       <input type="text" />
                   </div>
+                  <button>Salvar</button>
               </div>
           </div>
       </>

@@ -1,3 +1,7 @@
+import ModalAttach from "./ModalAttach"
+import ModalEvaluation from "./ModalEvaluation"
+import ModalFact from "./ModalFact"
+import ModalSection from "./ModalSection"
 const NewNoteBar = () => {
   return (
     <div id='newNoteBar'>
@@ -6,19 +10,19 @@ const NewNoteBar = () => {
         <div id='buttonsNewNote'>
             <div className='buttonNewNote'>
                 <img src="/main/health2.svg" width={'25px'} />
-                <span>Sessão</span>
+                <ModalSection />
             </div>
             <div className='buttonNewNote'>
             <img src="/main/map2.svg" width={'25px'} />
-                <span>Fato Relevante</span>
+                <ModalFact />
             </div>
             <div className='buttonNewNote'>
             <img src="/main/2.svg" width={'25px'} />
-                <span>Anexo</span>
+                <ModalAttach />
             </div>
             <div className='buttonNewNote'>
             <img src="/main/doc2.svg" width={'20px'} />
-                <span>Avaliação Psicológica</span>
+                <ModalEvaluation />
             </div>
         </div>
     </div>

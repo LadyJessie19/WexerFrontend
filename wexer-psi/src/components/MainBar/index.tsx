@@ -1,3 +1,4 @@
+import Menu from './Menu';
 import './style.css'
 
 const MainBar = () => {
@@ -5,7 +6,7 @@ const MainBar = () => {
     <>
       <header>
         <div id='leftMainBar'>
-         <img src="/main-bar/menu.svg" width={'32px'}/>
+         <span><Menu/></span>
          <span>Voltar para Home</span>
         </div>
         <div id='rightMainBar'>

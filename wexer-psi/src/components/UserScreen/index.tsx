@@ -1,6 +1,7 @@
 import "./style.css";
 import FieldsData from "./FieldsData";
 import FieldsClinic from "./FieldsClinic";
+import FieldsPassword from "./FieldsPassword";
 
 const UserScreen = () => {
     return (
@@ -31,8 +32,7 @@ const UserScreen = () => {
             <div className="bannerBody">
                 <p>Alterar senha</p>
             </div>
-                <button>Salvar</button>
-                <button>Retornar á listagem</button>
+                <FieldsPassword />
             </div>
         </section>
       </>
