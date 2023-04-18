@@ -9,7 +9,7 @@ const UserScreen = () => {
       <div id="divHeader">
         <p>Dados da conta</p>
       </div>
-        <section>
+        <section className="specialSection">
           <div id="sectionHeader">
             <div className="dFlexRow">
                 <span><h5>Meus Dados</h5></span>

@@ -42,8 +42,8 @@ table {
     border-bottom: .5px solid lightgray;
     border-right: .5px solid lightgray;
     padding:  0 .5rem;
-    width: 150px;
-    height: 50px;
+    /* width: 150px;
+    height: 50px; */
     line-height: 7px;
     text-align: center;
 }
