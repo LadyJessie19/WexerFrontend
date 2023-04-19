@@ -15,13 +15,13 @@ const Major = () => {
       <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <MainBar menuHandle={menuHandle}/>
       <div id={menuOpen ? "greyBack" : ""}></div>
-      <Main/>
+      {/* <Main/> */}
       {/* <Home /> */}
-      {/* <Reusable /> */}
+      <Reusable />
       {/* <PatientsScreen /> */}
       {/* <UserScreen /> */}
     </>
-  );
+  );  
 };
 
 export default Major;

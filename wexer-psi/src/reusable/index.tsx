@@ -11,12 +11,16 @@ import TestCard from './TestCard'
 import RichTextBox from './TextBox'
 import TinyBarButtons from './TinyBarButtons'
 import Modals from '../Modals'
+import Buttons from './Buttons'
 
 const Reusable = () => {
     const [text, setText] = useState('Digite aqui')
   return (
     <>
         <div id="reusableSpace">
+            <hr />
+            <Buttons />
+            <hr />
             <ReportButton />
             <hr />
             <InterviewSelect />
