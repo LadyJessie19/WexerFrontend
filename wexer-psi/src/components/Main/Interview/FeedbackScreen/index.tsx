@@ -1,13 +1,11 @@
-import BodyInterview from "../BodyInterview"
-import FooterInterview from "../FooterInterview"
-import HeaderInterview from "../HeaderInterview"
+import BodyInterview from "../InterviewComps/BodyInterview"
+import HeaderInterview from "../InterviewComps/HeaderInterview"
 
 const FeedbackScreen = () => {
   return (
     <>
         <HeaderInterview title="Devolutiva" buttons={false}/>
         <BodyInterview title="Declaração" />
-        
     </>
   )
 }
