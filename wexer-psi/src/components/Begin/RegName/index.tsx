@@ -1,38 +1,36 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
   return (
     <>
-        <div id="loginScreen">
+      <div className="whiteBack">
         <main>
           <div id="logoSpace">
-            <img src="/login/wexerLogo.svg" />
+            <img src="/login/greyLogo.svg" />
+            <h3>Seja bem-vindo(a)!</h3>
+            <p>Preencha os campos para se cadastrar</p>
           </div>
           <div id="inputSpace">
             <div>
               <label>
-                Login
+                Nome
                 <input type="text" />
               </label>
             </div>
             <div>
               <label>
-                Senha
+                Email
                 <input type="text" />
               </label>
             </div>
             <div>
-              <small>Esqueci a senha</small>
-            </div>
-            <div>
-              <button>Entrar</button>
-            </div>
-            <div>
-              <p>Cadastre-se gratuitamente</p>
+              <button><Link to={"/registo-senha"}>Prosseguir</Link></button>
             </div>
           </div>
         </main>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

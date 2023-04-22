@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import '../style.css';
+import ButtonNewReg from '../../../reusable/Buttons/ButtonNewReg';
+import { Link } from 'react-router-dom';
 
 function Modal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +12,20 @@ function Modal() {
 
   return (
     <div>
-      <button onClick={handleModal}>Open Modal</button>
+      <ButtonNewReg btnFunction={handleModal}/>
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="modalE-backdrop" onClick={handleModal}></div>
+          <div className="modalE">
             <div id="modalImg">
               <img src="/modal-welcome/greyGradient.svg" id='greyGradient'/>
               <img src="/modal-welcome/womanDesktop.svg" id='womanDesktop'/>
             </div>
-            <h2>Modal Title</h2>
-            <p>Modal content goes here.</p>
-            <button onClick={handleModal}>Close Modal</button>
+            <h2>Bem vindo(a) ao Wexer Psi!</h2>
+            <p>Vamos começar atualizando seus dados</p>
+            <button className='btnVamosLa'>
+            <Link to="/registro-paciente">Vamos lá</Link>  
+            </button>
           </div>
         </>
       )}

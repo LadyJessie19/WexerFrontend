@@ -1,9 +1,12 @@
+import ButtonSave from "../../../../../reusable/Buttons/ButtonSave"
+import ButtonSkip from "../../../../../reusable/Buttons/ButtonSkip"
+
 const EvalFieldsFooter = () => {
   return (
     <>
         <div id="evalFieldsFooter">
-          <button>Salvar</button>
-          <button>Pular</button>
+          <ButtonSave />
+          <ButtonSkip />
         </div>
     </>
   )

@@ -1,35 +1,45 @@
+import ButtonSave from "../../../reusable/Buttons/ButtonSave";
+
 const FieldsClinic = () => {
-    return (
-      <>
-          <div id="inputsGeneral">
-              <div className="inputsLine">
-                  <div className="inputSolo">
-                  <label>CPF</label>
-                      <input type="text" />
-                  </div>
-                  <div className="inputSolo">
-                  <label>Nome</label>
-                      <input type="text" />
-                  </div>
-                  <div className="inputSolo">
-                      <label>Data de nascimento</label>
-                      <input type="text" />
-                  </div>
-              </div>
-              <div className="inputsLine">
-                  <div className="inputSolo">
-                  <label>Email</label>
-                      <input type="text" />
-                  </div>
-                  <div className="inputSolo">
-                  <label>Sexo/Gênero</label>
-                      <input type="text" />
-                  </div>
-                  <button>Salvar</button>
-              </div>
+  return (
+    <>
+      <div id="inputsGeneral">
+        <div className="inputsLine">
+          <div className="inputSolo">
+            <label>Nome da clínica</label>
+            <input type="text" />
           </div>
-      </>
-    )
-  }
-  
-  export default FieldsClinic
+          <div className="inputSolo">
+            <label>CEP</label>
+            <input type="text" />
+          </div>
+          <div className="inputSolo">
+            <label>Rua</label>
+            <input type="text" />
+          </div>
+          <div className="inputSolo">
+            <label>Número</label>
+            <input type="text" />
+          </div>
+        </div>
+        <div className="inputsLine">
+          <div className="inputSolo">
+            <label>Bairro</label>
+            <input type="text" />
+          </div>
+          <div className="inputSolo">
+            <label>Cidade</label>
+            <input type="text" />
+          </div>
+          <div className="inputSolo">
+            <label>Estado</label>
+            <input type="text" />
+          </div>
+          <ButtonSave />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default FieldsClinic;

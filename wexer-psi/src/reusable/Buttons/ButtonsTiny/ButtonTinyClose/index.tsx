@@ -1,7 +1,7 @@
-const ButtonTinyClose = () => {
+const ButtonTinyClose = ({onClick}:any) => {
   return (
     <>
-        <button className="buttonTinyClose"><img src="/buttons/close.svg" /></button>
+        <button className="buttonTinyClose" onClick={onClick}><img src="/buttons/close.svg" /></button>
     </>
   )
 }

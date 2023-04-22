@@ -1,7 +1,7 @@
-const ButtonEval = () => {
+const ButtonEval = ({onClick}:any) => {
     return (
       <>
-          <button className='buttonMedRec'> <img src="/buttons/evalIcon.svg"/> Avaliação Psicológica</button>
+          <button className='buttonMedRec' onClick={onClick}> <img src="/buttons/evalIcon.svg"/> Avaliação Psicológica</button>
       </>
     )
   }

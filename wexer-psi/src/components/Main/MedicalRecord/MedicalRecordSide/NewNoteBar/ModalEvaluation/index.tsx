@@ -1,5 +1,7 @@
 import { useState } from "react";
-import "../style.css";
+import '../../../../../../Modals/styleModals.css'
+import ButtonEval from "../../../../../../reusable/Buttons/MedRecButtons/ButtonEval";
+import { Link } from "react-router-dom";
 
 function ModalEvaluation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +12,11 @@ function ModalEvaluation() {
 
   return (
     <div>
-      <button onClick={handleModal}>Avaliação Psicológica</button>
+      <ButtonEval onClick={handleModal} />
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
               <h2>Nova Avaliação Psicológica</h2>
               <button onClick={handleModal}>&times;</button>
@@ -39,7 +41,7 @@ function ModalEvaluation() {
                 </div>
                 <div>
                   <button>Cancelar</button>
-                  <button>Criar</button>
+                  <Link to="/avaliacao"><button>Prosseguir</button></Link>
                 </div>
               </div>
           </div>

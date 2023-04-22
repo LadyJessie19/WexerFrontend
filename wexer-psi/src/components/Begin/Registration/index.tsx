@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Registration = () => {
   return (
     <>
@@ -130,7 +132,7 @@ const Registration = () => {
                 </div>
                 <div className="inputRegLine margin-top">
                     <div>
-                        <button>Cadastrar</button>
+                        <Link to={"/home"}><button>Cadastrar</button></Link>
                     </div>
                 </div>
             </div>

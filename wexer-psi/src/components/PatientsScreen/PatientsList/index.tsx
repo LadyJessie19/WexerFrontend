@@ -1,10 +1,26 @@
+import { useState } from 'react';
+import SideBar from '../../SideBar'
+import '../style.css'
+import MainBar from '../../MainBar';
+import ButtonNewReg from '../../../reusable/Buttons/ButtonNewReg';
+
 const PatientsList = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleModal = () => {
+    setMenuOpen(!menuOpen)
+  }
   return (
     <>
+      <MainBar menuHandle={handleModal}/>
+      <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <div className="pageHeader">
+        <p>Meus Pacientes</p>
+      </div>
       <section>
         <div id="sectionHeader">
           <div>
-            <button>Novo Cadastro</button>
+            <ButtonNewReg />
           </div>
           <div>
             <input type="search" />

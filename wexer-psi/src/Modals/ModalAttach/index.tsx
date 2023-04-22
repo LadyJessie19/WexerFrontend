@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../style.css";
+import "../styleModals.css";
 
 function ModalAttach() {
   const [isOpen, setIsOpen] = useState(false);

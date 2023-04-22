@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../style.css";
+import "../../../../../../Modals/styleModals.css";
+import ButtonAttach from "../../../../../../reusable/Buttons/MedRecButtons/ButtonAttach";
 
 function ModalAttach() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,11 @@ function ModalAttach() {
 
   return (
     <div>
-      <button onClick={handleModal}>Anexo</button>
+      <ButtonAttach onClick={handleModal} />
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
               <h2>Novo Anexo</h2>
               <button onClick={handleModal}>&times;</button>

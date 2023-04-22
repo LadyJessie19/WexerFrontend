@@ -1,18 +1,32 @@
+import { useState } from "react";
 import GeneralField from "./GeneralField";
 import ObsField from "./ObsField";
+import SideBar from "../../SideBar";
+import MainBar from "../../MainBar";
+import { Link } from "react-router-dom";
+import ButtonSave from "../../../reusable/Buttons/ButtonSave";
+import ButtonBack from "../../../reusable/Buttons/ButtonBack";
 
 const PatientReg = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const menuHandle = () => {
+    setMenuOpen(!menuOpen)
+  }
+
     return (
       <>
+        <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+        <MainBar menuHandle={menuHandle}/>
         <section>
           <div id="sectionHeader">
             <div className="dFlexRow">
-                <span><h5>Dados cadastrais</h5></span>
-                <span><h5>Prontuário</h5></span>              
+                <Link to="/registro-paciente"><span><h5>Dados cadastrais</h5></span></Link>
+                <Link to="/prontuario"><span><h5>Prontuário</h5></span> </Link>             
             </div>
-            <div>
-              <button type="submit">Salvar</button>
-              <button type="submit">Retornar á listagem</button>
+            <div className="dFlexRow">
+              <ButtonSave />
+              <ButtonBack />
             </div>
           </div>
           <div id="sectionBody">
@@ -33,9 +47,9 @@ const PatientReg = () => {
                 <p>Observações</p>
             </div>
                 <ObsField />
-            <div>
-                <button>Salvar</button>
-                <button>Retornar á listagem</button>
+            <div className="dFlexRow">
+                <ButtonSave />
+                <ButtonBack />
             </div>
           </div>
         </section>

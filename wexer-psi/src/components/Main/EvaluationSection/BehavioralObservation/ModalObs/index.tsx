@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import './style.css'
+import '../../../../../Modals/styleModals.css'
+import ButtonSave from '../../../../../reusable/Buttons/ButtonSave';
+import ButtonTinyClose from '../../../../../reusable/Buttons/ButtonsTiny/ButtonTinyClose';
 
 function ModalObs() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,18 +12,16 @@ function ModalObs() {
 
   return (
     <div>
-      <button onClick={handleModal}>Salvar</button>
+      <ButtonSave onClick={handleModal}/>{/*   /* backgroundModal contentModal */ }
       {isOpen && (
-        <div className="modal">
-          <div className="modal-overlay" onClick={handleModal}></div>
-          <div className="modal-content">
-            <button onClick={handleModal}>X</button>
-            <img src="/evaluation/circle.png" />
+        <div className="backgroundModal">
+          <div className="contentModal">
+            <ButtonTinyClose onClick={handleModal}/>
             <h2>Avaliação Psicológica salva com sucesso!</h2>
             <p>Você irá visualizar esta avaliação no prontuário do paciente</p>
-            <button>Ok</button>
+            <button className="okButton">Ok</button>
+            </div>
           </div>
-        </div>
       )}
     </div>
   );

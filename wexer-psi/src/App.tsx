@@ -1,11 +1,12 @@
-import Major from "./Major";
-import Begin from "./Begin";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./components/routes";
 
 function App() {
   return (
     <>
-      {/* <Begin /> */}
-      <Major />
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
     </>
   );
 }

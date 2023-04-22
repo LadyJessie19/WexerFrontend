@@ -82,7 +82,7 @@ button:hover{
     display: flex;
     gap: 1rem;
     align-items: center;
-    margin: 1rem;
+    margin: .1rem;
     background-color: white;
 }
 
@@ -133,4 +133,8 @@ button:hover{
 
 .buttonTrash{
     border: 1px solid #EB5757;
+}
+
+.fontSizeLower{
+    font-size: 16px;
 }

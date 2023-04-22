@@ -1,3 +1,6 @@
+import ButtonAdd from "../../../../../../reusable/Buttons/ButtonAddList"
+
+
 const TestAppBegin = () => {
   return (
     <div id="testAppBegin">
@@ -5,7 +8,7 @@ const TestAppBegin = () => {
             <h4>Por favor,  adicione um teste</h4>
         </div>
         <div>
-            <button>Adicionar</button>
+            <ButtonAdd/>
         </div>
     </div>
   )

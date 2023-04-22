@@ -2,7 +2,9 @@ import "./style.css";
 import FieldsData from "./FieldsData";
 import FieldsClinic from "./FieldsClinic";
 import FieldsPassword from "./FieldsPassword";
-
+import ButtonSave from "../../reusable/Buttons/ButtonSave";
+import '../../reusable/Buttons/styleButtons.css'
+import ButtonBack from "../../reusable/Buttons/ButtonBack";
 const UserScreen = () => {
     return (
       <>
@@ -15,9 +17,9 @@ const UserScreen = () => {
                 <span><h5>Meus Dados</h5></span>
                 <span><h5>Meu faturamento</h5></span>              
             </div>
-            <div>
-              <button type="submit">Salvar</button>
-              <button type="submit">Retornar á listagem</button>
+            <div className="dFlexRow">
+              <ButtonSave />
+              <ButtonBack />
             </div>
           </div>
           <div id="sectionBody">

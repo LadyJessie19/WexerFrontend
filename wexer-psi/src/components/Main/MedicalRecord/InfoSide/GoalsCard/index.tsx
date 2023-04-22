@@ -1,8 +1,10 @@
+import ModalService from "../../../../../Modals/ModalService"
+
 const GoalsCard = () => {
   return (
     <div className="sideCard marginBottom">
         <div className="buttonSide">
-          <button><img src="/side-section/edit.svg" width={'16px'} /></button>
+          <ModalService />
         </div>
         <div>
             <h4>Demandas e objetivos</h4>

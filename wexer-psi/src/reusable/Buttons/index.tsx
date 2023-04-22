@@ -17,7 +17,7 @@ import ButtonTinyClose from "./ButtonsTiny/ButtonTinyClose"
 import ButtonTinyEdit from "./ButtonsTiny/ButtonTinyEdit"
 import ButtonTinyTrash from "./ButtonsTiny/ButtonTinyTrash"
 import ButtonTinyWatch from "./ButtonsTiny/ButtonTinyWatch"
-import './style.css'
+import './styleButtons.css'
 
 const Buttons = () => {
   return (

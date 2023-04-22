@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../style.css";
+import "../styleModals.css";
 
 function ModalEvaluation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,8 +13,8 @@ function ModalEvaluation() {
       <button onClick={handleModal}>Avaliação Psicológica</button>
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
               <h2>Nova Avaliação Psicológica</h2>
               <button onClick={handleModal}>&times;</button>

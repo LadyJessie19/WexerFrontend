@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import '../style.css';
+import '../../../../../../Modals/styleModals.css';
+import ButtonSection from '../../../../../../reusable/Buttons/MedRecButtons/ButtonSection';
 
 function ModalSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,11 @@ function ModalSection() {
 
   return (
     <div>
-      <button onClick={handleModal}>Sessão</button>
+        <ButtonSection onClick={handleModal} />
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
                 <h2>Nova Sessão</h2>
                 <button onClick={handleModal}>&times;</button>
@@ -57,7 +58,7 @@ function ModalSection() {
                 <div>
                     <label>
                         Resumo da sessão*
-                        <textarea cols="30" rows="10"></textarea>
+                        <textarea cols="30" rows="7"></textarea>
                     </label>
                 </div>
             </div>

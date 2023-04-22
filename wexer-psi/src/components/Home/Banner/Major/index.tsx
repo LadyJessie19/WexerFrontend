@@ -1,10 +1,10 @@
-import MainBar from "../components/MainBar";
-import SideBar from "../components/SideBar";
-import Main from "../components/Main";
-import Home from "../components/Home";
-import Reusable from "../reusable";
-import PatientsScreen from "../components/PatientsScreen";
-import UserScreen from "../components/UserScreen";
+import MainBar from "../../../MainBar";
+import SideBar from "../../../SideBar";
+import Main from "../../../Main";
+import Home from "../..";
+import Reusable from "../../../../reusable";
+import PatientsScreen from "../../../PatientsScreen";
+import UserScreen from "../../../UserScreen";
 import { useState } from "react";
 
 const Major = () => {
@@ -15,9 +15,9 @@ const Major = () => {
       <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <MainBar menuHandle={menuHandle}/>
       <div id={menuOpen ? "greyBack" : ""}></div>
-      <Main/>
+      {/* <Main/> */}
       {/* <Home /> */}
-      {/* <Reusable /> */}
+      <Reusable />
       {/* <PatientsScreen /> */}
       {/* <UserScreen /> */}
     </>

@@ -1,11 +1,14 @@
+import ButtonSave from "../../../../../reusable/Buttons/ButtonSave"
+import ButtonSkip from "../../../../../reusable/Buttons/ButtonSkip"
+
 const EvalFieldsHeader = () => {
     return (
       <>
         <div className="evalFieldsHeader">
             <span><h2>Aplicação de Teste</h2></span>
-            <span>
-              <button>Salvar</button>
-              <button>Pular</button>
+            <span className="dFlexRow">
+              <ButtonSave />
+              <ButtonSkip />
             </span>
           </div>
       </>

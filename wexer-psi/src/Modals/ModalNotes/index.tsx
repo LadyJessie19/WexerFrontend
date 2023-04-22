@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../style.css";
+import "../styleModals.css";
 import RichTextBox from "../../reusable/TextBox";
 
 function ModalNotes() {
@@ -15,8 +15,8 @@ function ModalNotes() {
       <button onClick={handleModal}>Anotações</button>
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
               <h2>Anotações Pessoais</h2>
               <button onClick={handleModal}>&times;</button>

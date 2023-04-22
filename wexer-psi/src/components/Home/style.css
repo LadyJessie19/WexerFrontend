@@ -8,7 +8,7 @@
     position: absolute;
     width: 792px;
     height: 303px;
-    top: 0px;
+    top: 30px;
     background-color: #017849;
     border-radius: 0px 0px 16px 16px;
 }
@@ -80,7 +80,7 @@ td{
     list-style: none;
 }
 
-.modal-backdrop {
+.modalE-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -89,16 +89,18 @@ td{
     background-color: rgba(0, 0, 0, 0.5);
   }
   
-  .modal {
+  .modalE {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    padding-bottom: 50px !important;
+    border-radius: 25px !important; 
     width: 557px;
     height: 400px;
+    text-align: center;
   }
   #greyGradient{
     position: relative;
@@ -107,5 +109,22 @@ td{
   }
   #womanDesktop{
     position: relative;
-    left: 30px;
+  }
+
+  #modalImg{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .btnVamosLa{
+    background-color: #017849 !important;
+    color: white;
+    padding: 14px 100px !important;
+    border-radius: 32px !important;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .btnVamosLa:hover{
+    background-color: gray !important;
+    color: black;
   }

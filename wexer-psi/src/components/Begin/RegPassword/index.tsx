@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Login = () => {
     return (
       <>
@@ -27,7 +29,7 @@ const Login = () => {
                 <small>*Precisa conter uma letra em MAIÚSCULA</small>
               </div>
               <div>
-                <button>Prosseguir</button>
+                <Link to="/registo-info"><button>Prosseguir</button></Link>
               </div>
             </div>
           </main>

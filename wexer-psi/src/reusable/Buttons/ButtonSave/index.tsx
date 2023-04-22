@@ -1,7 +1,7 @@
-const ButtonSave = () => {
+const ButtonSave = ({onClick}:any) => {
   return (
     <>
-        <button className='buttonDesign buttonSave'> <img src="/buttons/save.svg"/> Salvar</button>
+        <button className='buttonDesign buttonSave' onClick={onClick}> <img src="/buttons/save.svg"/> Salvar</button>
     </>
   )
 }

@@ -11,16 +11,28 @@ main{
     font-family: 'Comfortaa' !important;
 }
 
+.pageHeader{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size: 28px;
+    font-weight: 400;
+}
+
 section{
     width: 85vw;
     background-color: white;
     padding: 21px;
+    position: absolute;
+    top: 120px;
+    left: 150px;
 }
 
 #sectionHeader{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
+    height: 12vh;
 }
 
 table {
@@ -41,9 +53,7 @@ table {
 #sectionHeader>div>span{
     border-bottom: .5px solid lightgray;
     border-right: .5px solid lightgray;
-    padding:  0 .5rem;
-    /* width: 150px;
-    height: 50px; */
+    padding: 0 .5rem;
     line-height: 7px;
     text-align: center;
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../style.css';
+import "../styleModals.css";
 
 function ModalSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,8 +13,8 @@ function ModalSection() {
       <button onClick={handleModal}>Sessão</button>
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
                 <h2>Nova Sessão</h2>
                 <button onClick={handleModal}>&times;</button>

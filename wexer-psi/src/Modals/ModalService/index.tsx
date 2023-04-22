@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../style.css";
+import "../styleModals.css";
+import ButtonTinyEdit from "../../reusable/Buttons/ButtonsTiny/ButtonTinyEdit";
 
 function ModalService() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,11 @@ function ModalService() {
 
   return (
     <div>
-      <button onClick={handleModal}>Serviço</button>
+      <ButtonTinyEdit onClick={handleModal} />
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
               <h2>Novo serviço</h2>
               <button onClick={handleModal}>&times;</button>

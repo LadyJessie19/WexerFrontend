@@ -1,7 +1,7 @@
-const ButtonAttach = () => {
+const ButtonAttach = ({onClick}:any) => {
     return (
       <>
-          <button className='buttonMedRec'> <img src="/buttons/attachIcon.svg"/> Anexo</button>
+          <button className='buttonMedRec' onClick={onClick}> <img src="/buttons/attachIcon.svg"/> Anexo</button>
       </>
     )
   }

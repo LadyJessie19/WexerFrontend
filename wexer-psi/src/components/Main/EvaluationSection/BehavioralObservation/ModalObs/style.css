@@ -1,48 +1,26 @@
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9999;
-  }
-  
-  .modal-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    max-width: 400px;
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  }
+.modal{
+  width: 99vw;
+  height: 99vh;
+  z-index: 2;
+  background-color: #7777773a;
+}
+
+.modal-content{
+  position: relative;
+  width: 27%;
+  background-color: #fff;
+  margin-top: 300px;
+  margin-left: 700px;
+  border-radius: 14px;
+  padding: 4rem;
+}
   
   .modal h2 {
     margin-top: 0;
   }
   
   .modal p {
-    margin-bottom: 10px;
-  }
-  
-  .modal button {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
+    margin-bottom: 50px;
   }
   
   .modal button:focus {
@@ -50,6 +28,17 @@
   }
   
   .modal button:hover {
-    background-color: #f1f1f1;
+    background-color: #00311e;
+    color: #fff;
+  }
+
+  .okButton{
+    background-color: #017849;
+    padding: 15px 130px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 23px;
   }
   

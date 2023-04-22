@@ -1,16 +1,15 @@
-import Menu from './Menu';
+import { Link } from 'react-router-dom';
 import './style.css'
 
-const MainBar = ({menuHandle}) => {
+const MainBar = ({menuHandle}:any) => {
   return (
     <>
       <header>
         <div id='leftMainBar'>
          <span>
-          {/* <Menu/> */}
           <img src="/main-bar/menu.svg" width={'32px'} onClick={menuHandle}/>
           </span>
-         <span>Voltar para Home</span>
+         <Link to="/home"><span>Voltar para Home</span></Link>
         </div>
         <div id='rightMainBar'>
          <span>Bem vindo(a), <strong>Daniel</strong></span>

@@ -1,6 +1,7 @@
 import PatientReg from './PatientReg'
 import PatientsList from './PatientsList'
 import './style.css'
+
 const PatientsScreen = () => {
   return (
     <>
@@ -8,8 +9,8 @@ const PatientsScreen = () => {
             <div id='mainHeader'>
                 <h3>Meus pacientes</h3>
             </div>
-            {/* <PatientsList /> */}
-            <PatientReg />
+            <PatientsList />
+            {/* <PatientReg /> */}
         </main>
     </>
   )

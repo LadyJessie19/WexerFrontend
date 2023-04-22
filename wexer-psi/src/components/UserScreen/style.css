@@ -91,10 +91,17 @@ table {
     margin-bottom: 2rem;
 }
 
+.spaceBetween{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 .inputSolo{
     display: flex;
     flex-direction: column;
 }
+
 .inputSolo>input{
     min-width: 17vw;
     padding: 12px;

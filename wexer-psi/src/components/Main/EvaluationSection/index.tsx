@@ -6,7 +6,7 @@ import TestApplication from "./TestApplication"
 const EvaluationSection = () => {
   return (
     <>
-        <MainBarEvaluation />
+        
         {/* <EvaluationFields /> */}
         {/* <TestApplication /> */}
         <BehavioralObservation />

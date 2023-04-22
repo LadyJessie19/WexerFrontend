@@ -1,7 +1,7 @@
-const ButtonSection = () => {
+const ButtonSection = ({onClick}:any) => {
     return (
       <>
-          <button className='buttonMedRec'> <img src="/buttons/sectionIcon.svg"/> Sessão</button>
+          <button className='buttonMedRec' onClick={onClick}> <img src="/buttons/sectionIcon.svg"/> Sessão</button>
       </>
     )
   }

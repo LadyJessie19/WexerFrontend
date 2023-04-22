@@ -3,8 +3,8 @@ import ModalFact from "./ModalFact";
 import ModalAttach from "./ModalAttach";
 import ModalEvaluation from "./ModalEvaluation";
 import ModalNotes from "./ModalNotes";
-import './style.css'
 import ModalService from "./ModalService";
+import './styleModals.css'
 
 const Modals = () => {
   return (

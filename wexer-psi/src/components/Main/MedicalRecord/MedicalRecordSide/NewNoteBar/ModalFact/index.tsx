@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "../style.css";
+import "../../../../../../Modals/styleModals.css";
+import ButtonFact from "../../../../../../reusable/Buttons/MedRecButtons/ButtonFact";
 
 function ModalFact() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,11 +11,11 @@ function ModalFact() {
 
   return (
     <div>
-      <button onClick={handleModal}>Fato Relevante</button>
+      <ButtonFact onClick={handleModal} />
       {isOpen && (
         <>
-          <div className="modal-backdrop" onClick={handleModal}></div>
-          <div className="modal">
+          <div className="backgroundModal" onClick={handleModal}></div>
+          <div className="contentModal">
             <div>
               <h2>Novo Fato Relevante</h2>
               <button onClick={handleModal}>&times;</button>

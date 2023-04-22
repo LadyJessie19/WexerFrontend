@@ -1,10 +1,11 @@
 import React from "react";
+import ModalService from "../../../../../Modals/ModalService";
 
 const ServiceCard = () => {
   return (
     <div className="sideCard">
       <div className="buttonSide">
-          <button><img src="/side-section/edit.svg" width={'16px'} /></button>
+          <ModalService />
         </div>
       <div>
         <h4>Serviço</h4>

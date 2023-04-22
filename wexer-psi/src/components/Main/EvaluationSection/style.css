@@ -56,9 +56,9 @@ span>h5{
     border-radius: 10px;
 }
 
-#sectionEval{
+.sectionEval{
     padding-bottom: 300px;
-    margin-bottom: 100px;
+    margin: 120px 100px;
 }
 
 .headerSection{
