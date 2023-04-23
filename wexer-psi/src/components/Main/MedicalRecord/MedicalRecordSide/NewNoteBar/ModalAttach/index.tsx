@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "../../../../../../Modals/styleModals.css";
 import ButtonAttach from "../../../../../../reusable/Buttons/MedRecButtons/ButtonAttach";
+import ButtonCancel from "../../../../../../reusable/Buttons/ButtonCancel";
+import ButtonCreate from "../../../../../../reusable/Buttons/ButtonCreate";
+import ButtonTinyClose from "../../../../../../reusable/Buttons/ButtonsTiny/ButtonTinyClose";
 
 function ModalAttach() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,44 +19,46 @@ function ModalAttach() {
         <>
           <div className="backgroundModal" onClick={handleModal}></div>
           <div className="contentModal">
-            <div>
+            <div className="dFlex centerStart mb1">
               <h2>Novo Anexo</h2>
-              <button onClick={handleModal}>&times;</button>
+              <ButtonTinyClose onClick={handleModal} />
             </div>
-            <div>
-              <div>
-                <label>
-                  Data*
-                  <input type="date" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Titulo*
-                  <input type="text" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Descrição*
-                  <textarea cols="30" rows="10">Text</textarea>
-                </label>
-              </div>
-              <div>
-                <label>Anexar arquivos*
-                <input type="file"/>
-                </label>
+            <div className="dFlex flexCol startCenter mb1">
+              <div className="dFlex gap1 startCenter mb1">
+                <div>
+                  <label>
+                    Data*
+                    <input className="input" value={"2023-01-24"} type="date" />
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Titulo*
+                    <input className="input" placeholder="Digite" type="text" />
+                  </label>
+                </div>
               </div>
             </div>
+              <label className="dFlex flexCol startCenter mb1">
+                Descrição*
+                <textarea className="textarea" placeholder="Text"></textarea>
+              </label>
               <div>
+                <label>
+                  Anexar arquivos*
+                  <input className="input" type="file" />
+                </label>
+              </div>
+              <hr />
+                <div className="dFlex spaBet pad1">
                 <div>
                   <small>*Campos Obrigatórios</small>
                 </div>
-                <div>
-                  <button>Cancelar</button>
-                  <button>Criar</button>
+                <div className="dFlex">
+                  <ButtonCancel />
+                  <ButtonCreate />
                 </div>
-              </div>
+                </div>
           </div>
         </>
       )}

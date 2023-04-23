@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 #divHeader{
-    position: absolute;
-    top: 75px;
-    left: 120px;
     font-weight: 500;
     font-family: 'Confortaa';
-    font-size: 18px;
+    font-size: 26px;
 }
 
 main{
@@ -20,16 +17,10 @@ main{
     font-family: 'Comfortaa' !important;
 }
 
-section{
-    width: 85vw;
-    background-color: white;
-    padding: 14px;
-    border-radius: 14px;
-}
 .specialSection{
-    margin-left: 100px;
-    margin-top: 130px;
-    margin-bottom: 130px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 1rem;
 }
 #sectionHeader{
     display: flex;
@@ -56,8 +47,6 @@ table {
     border-bottom: .5px solid lightgray;
     border-right: .5px solid lightgray;
     padding:  0 .5rem;
-   /*  width: 150px;
-    height: 50px; */
     line-height: 7px;
     text-align: center;
 }
@@ -103,9 +92,15 @@ table {
 }
 
 .inputSolo>input{
-    min-width: 17vw;
     padding: 12px;
     border-radius: 7px;
     border: 1px solid lightgray;
     outline: 0;
+    width: 300px;
+}
+
+.compUser{
+    position: absolute;
+    top: 130px;
+    left: 140px;
 }

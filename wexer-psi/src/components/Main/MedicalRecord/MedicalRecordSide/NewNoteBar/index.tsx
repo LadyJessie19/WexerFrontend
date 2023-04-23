@@ -3,6 +3,7 @@ import ModalEvaluation from "./ModalEvaluation"
 import ModalFact from "./ModalFact"
 import ModalSection from "./ModalSection"
 import '../../../../../Modals/styleModals.css'
+import '../../../../../reusable/Buttons/styleButtons.css'
 
 const NewNoteBar = () => {
   return (

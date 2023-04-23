@@ -5,6 +5,7 @@ import MedicalRecordSide from "./MedicalRecordSide"
 import SearchBar from "./SearchBar"
 import '../style.css'
 import MainBar from "../../MainBar"
+import '../../../reusable/Buttons/styleButtons.css'
 
 const MedicalRecord = () => {
   const [ menuOpen, setMenuOpen ] = useState(false)
@@ -16,9 +17,13 @@ const MedicalRecord = () => {
     <>
         <SideBar menuOpen={menuOpen} setMenuOpen={handleMenu} />
         <MainBar menuHandle={handleMenu}/>
-        <SearchBar />
-        <InfoSide />
-        <MedicalRecordSide />
+        <div id="compMedicalRecord">
+          <SearchBar />
+          <div id="compMedRecSplited">
+            <InfoSide />
+            <MedicalRecordSide />
+          </div>
+        </div>
     </>
   )
 }

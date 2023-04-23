@@ -1,9 +1,13 @@
 import { useState } from 'react';
-import SideBar from '../../SideBar'
-import '../style.css'
-import MainBar from '../../MainBar';
-import ButtonNewReg from '../../../reusable/Buttons/ButtonNewReg';
+import { Link } from 'react-router-dom';
 
+import SideBar from '../../SideBar'
+import MainBar from '../../MainBar';
+
+import ButtonNewReg from '../../../reusable/Buttons/ButtonNewReg';
+import ButtonTinyEdit from '../../../reusable/Buttons/ButtonsTiny/ButtonTinyEdit';
+
+import '../style.css'
 const PatientsList = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -14,13 +18,10 @@ const PatientsList = () => {
     <>
       <MainBar menuHandle={handleModal}/>
       <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <div className="pageHeader">
-        <p>Meus Pacientes</p>
-      </div>
-      <section>
+      <div className='divPatientsScreen'>
         <div id="sectionHeader">
           <div>
-            <ButtonNewReg />
+            <Link to="/registro-paciente"><ButtonNewReg /></Link>
           </div>
           <div>
             <input type="search" />
@@ -56,7 +57,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <button>Editar</button>{" "}
+                <ButtonTinyEdit />
               </td>
             </tr>
             <tr>
@@ -71,7 +72,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <button>Editar</button>{" "}
+                <ButtonTinyEdit />
               </td>
             </tr>
             <tr>
@@ -86,7 +87,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <button>Editar</button>{" "}
+                <ButtonTinyEdit />
               </td>
             </tr>
             <tr>
@@ -101,7 +102,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <button>Editar</button>{" "}
+                <ButtonTinyEdit />
               </td>
             </tr>
             <tr>
@@ -116,7 +117,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <button>Editar</button>{" "}
+                <ButtonTinyEdit />
               </td>
             </tr>
             <tr>
@@ -131,12 +132,12 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <button>Editar</button>{" "}
+                <ButtonTinyEdit />
               </td>
             </tr>
           </table>
         </div>
-      </section>
+      </div>
     </>
   );
 };

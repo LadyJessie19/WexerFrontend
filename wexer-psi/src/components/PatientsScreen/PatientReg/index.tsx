@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import GeneralField from "./GeneralField";
 import ObsField from "./ObsField";
 import SideBar from "../../SideBar";
 import MainBar from "../../MainBar";
-import { Link } from "react-router-dom";
+
 import ButtonSave from "../../../reusable/Buttons/ButtonSave";
 import ButtonBack from "../../../reusable/Buttons/ButtonBack";
 
@@ -13,12 +15,11 @@ const PatientReg = () => {
   const menuHandle = () => {
     setMenuOpen(!menuOpen)
   }
-
     return (
       <>
         <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
         <MainBar menuHandle={menuHandle}/>
-        <section>
+        <div className="compPatientReg">
           <div id="sectionHeader">
             <div className="dFlexRow">
                 <Link to="/registro-paciente"><span><h5>Dados cadastrais</h5></span></Link>
@@ -52,7 +53,7 @@ const PatientReg = () => {
                 <ButtonBack />
             </div>
           </div>
-        </section>
+        </div>
       </>
     );
   };

@@ -47,7 +47,6 @@ div>span{
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
-    padding: 0px 130px;
 }
 
 .barLine>div{
@@ -63,4 +62,9 @@ div>span{
     width: 100vw;
     height: 100vh;
     z-index: 1;
+}
+
+.barLine a{
+    color: white;
+    font-size: 14px;
 }

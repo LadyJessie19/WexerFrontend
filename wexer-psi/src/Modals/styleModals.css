@@ -15,8 +15,92 @@
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 14px;
     z-index: 5;
+    width: 25%;
   }
 
-  /* backgroundModal contentModal */
+.dFlex{
+  display: flex;
+}
+
+.centerStart{
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.startCenter{
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.spaBet{
+  justify-content: space-between;
+}
+
+.flexCol{
+  flex-direction: column;
+}
+
+.gap1{
+  gap: 1rem;
+}
+
+.pad1{
+  padding: 1rem;
+}
+
+.greenCircle{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 12px;
+  background-color: #00995D;
+  color: white;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.fontL{
+  font-size: 21px;
+}
+
+.fontS{
+  font-size: 14px;
+}
+
+.fontBold{
+  font-weight: 600;
+}
+
+.textarea{
+  width: 95%;
+  height: 100px;
+  resize: none;
+  border-radius: 9px;
+  padding: .5rem;
+}
+
+.input{
+  width: 90%;
+  border-radius: 9px;
+  padding: .5rem;
+}
+
+.mb1{
+  margin-bottom: 1rem;
+}
+
+[type="file"]{
+  background-color: #2F80ED;
+}
+
+.greenBack{
+  background-color: #C5F2E0;
+  padding: .5rem;
+  border-radius: 14px;
+}
+
+.greenText{
+  color: #00995D;
+}

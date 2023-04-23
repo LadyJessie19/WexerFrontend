@@ -72,3 +72,9 @@
   h2{
     color: #00995D;
   }
+
+  .outerComp{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+  }

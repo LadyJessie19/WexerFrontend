@@ -1,19 +1,17 @@
-import PatientReg from './PatientReg'
-import PatientsList from './PatientsList'
-import './style.css'
+import PatientsList from "./PatientsList";
+import "./style.css";
 
 const PatientsScreen = () => {
   return (
     <>
-        <main>
-            <div id='mainHeader'>
-                <h3>Meus pacientes</h3>
-            </div>
-            <PatientsList />
-            {/* <PatientReg /> */}
-        </main>
+      <div id="patientsScreen">
+        <div className="mainHeader">
+          <p>Meus pacientes</p>
+        </div>
+        <PatientsList />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default PatientsScreen
+export default PatientsScreen;

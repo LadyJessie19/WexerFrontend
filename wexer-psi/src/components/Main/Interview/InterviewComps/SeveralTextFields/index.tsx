@@ -1,7 +1,11 @@
 import FooterInterview from "../FooterInterview"
 import TextAreaComp from "../TextAreaComp"
 
-const BodyInterview = () => {
+type PropsBodyInt = {
+  backPath:string,
+}
+
+const BodyInterview = ({backPath}:PropsBodyInt) => {
   return (
     <>
         <div className="innerBodyInterview">
@@ -10,7 +14,7 @@ const BodyInterview = () => {
             <TextAreaComp title='III - Procedimento'/>
             <TextAreaComp title='IV - Análise'/>
             <TextAreaComp title='V - Conclusão'/>
-            <FooterInterview />
+            <FooterInterview backPath={backPath}/>
         </div>
     </>
   )

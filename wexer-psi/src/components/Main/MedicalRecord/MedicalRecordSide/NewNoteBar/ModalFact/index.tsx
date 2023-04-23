@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "../../../../../../Modals/styleModals.css";
 import ButtonFact from "../../../../../../reusable/Buttons/MedRecButtons/ButtonFact";
+import ButtonTinyClose from "../../../../../../reusable/Buttons/ButtonsTiny/ButtonTinyClose";
+import ButtonCancel from "../../../../../../reusable/Buttons/ButtonCancel";
+import ButtonCreate from "../../../../../../reusable/Buttons/ButtonCreate";
 
 function ModalFact() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,37 +19,40 @@ function ModalFact() {
         <>
           <div className="backgroundModal" onClick={handleModal}></div>
           <div className="contentModal">
-            <div>
+            <div className="dFlex centerStart mb1">
               <h2>Novo Fato Relevante</h2>
-              <button onClick={handleModal}>&times;</button>
+              <ButtonTinyClose onClick={handleModal} />
             </div>
-            <div>
-              <div>
-                <label>
-                  Data*
-                  <input type="date" />
-                </label>
+            <div className="dFlex flexCol startCenter mb1">
+              <div className="dFlex gap1 startCenter mb1">
+                <div>
+                  <label>
+                    Data*
+                    <input className="input" value={"2023-01-24"} type="date" />
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    Titulo*
+                    <input className="input" placeholder="Digite" type="text" />
+                  </label>
+                </div>
               </div>
-              <div>
-                <label>
-                  Titulo*
-                  <input type="text" />
-                </label>
-              </div>
-              <div>
-                <label>
-                  Descrição*
-                  <textarea cols="30" rows="10">Text</textarea>
-                </label>
+            </div>
+              <label className="dFlex flexCol startCenter mb1">
+                Descrição*
+                <textarea className="textarea" placeholder="Text"></textarea>
+              </label>
+              <hr />
+                <div className="dFlex spaBet pad1">
                 <div>
                   <small>*Campos Obrigatórios</small>
                 </div>
-                <div>
-                  <button>Cancelar</button>
-                  <button>Criar</button>
+                <div className="dFlex">
+                  <ButtonCancel />
+                  <ButtonCreate />
                 </div>
-              </div>
-            </div>
+                </div>
           </div>
         </>
       )}

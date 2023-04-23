@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import "../styleModals.css";
+import ButtonCreate from '../../reusable/Buttons/ButtonCreate';
+import '../../reusable/Buttons/styleButtons.css'
 
 function ModalSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,7 +69,7 @@ function ModalSection() {
                 </div>
                 <div>
                     <button>Cancelar</button>
-                    <button>Criar</button>
+                    <ButtonCreate />
                 </div>
             </div>
           </div>
