@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import ButtonNext from "../../../reusable/Buttons/ButtonNext";
 
-const Login = () => {
+const RegPassword = () => {
     return (
       <>
+        <img src="/login/logo.svg" id="wexerLogoBack" />
         <div className="whiteBack">
           <main>
             <div id="logoSpace">
@@ -12,15 +14,15 @@ const Login = () => {
             </div>
             <div id="inputSpace">
               <div>
-                <label>
+                <label className="flexCol blackColor">
                   Senha
-                  <input type="password" />
+                  <input className="inputLogin" type="password" />
                 </label>
               </div>
               <div>
-                <label>
+                <label className="flexCol blackColor">
                   Confirmar senha
-                  <input type="password" />
+                  <input className="inputLogin" type="password" />
                 </label>
               </div>
               <div id="infoPassword">
@@ -28,8 +30,8 @@ const Login = () => {
                 <small>*Precisa conter um caractere especial */+.</small>
                 <small>*Precisa conter uma letra em MAIÚSCULA</small>
               </div>
-              <div>
-                <Link to="/registo-info"><button>Prosseguir</button></Link>
+              <div className="buttonLine">
+                <Link to="/registo-info"><ButtonNext /></Link>
               </div>
             </div>
           </main>
@@ -38,5 +40,5 @@ const Login = () => {
     );
   };
   
-  export default Login;
+  export default RegPassword;
   

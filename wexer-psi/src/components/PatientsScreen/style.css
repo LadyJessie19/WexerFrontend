@@ -55,7 +55,7 @@ table {
 
 .inputsLine{
     display: flex;
-    gap: 1rem;
+    gap: 11rem;
     margin-bottom: 2rem;
 }
 
@@ -64,7 +64,7 @@ table {
     flex-direction: column;
 }
 .inputSolo>input{
-    width: 24vw;
+    width: 450px;
     padding: 12px;
     border-radius: 7px;
     border: 1px solid lightgray;
@@ -95,4 +95,9 @@ table {
     background-color: white;
     padding: 1rem;
     border-radius: 14px;
+}
+
+.colorBlue{
+    color: #2F80ED;
+    font-weight: 500;
 }

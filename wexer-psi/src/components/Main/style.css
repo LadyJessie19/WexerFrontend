@@ -24,6 +24,7 @@
     font-size: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #leftSearchBar>span{
@@ -31,11 +32,19 @@
     border-right: 1px solid rgb(218, 215, 215);
 }
 
-#searchSpan{
-    padding: 1rem 4rem;
-    border-radius: 20px;
+.searchSpan{
+    padding: 1rem 2rem;
+    border-radius: 14px;
     font-size: 14px;
     border: 1px solid darkgray;
+    display: flex;
+    align-items: center;
+}
+
+.searchSpan>input{
+    border: none;
+    width: 250px;
+    outline: none;
 }
 
 #infoSide{

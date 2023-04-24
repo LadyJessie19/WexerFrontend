@@ -1,5 +1,5 @@
 main{
-    background-color: #00995D;
+    background-color: #017849;
     width: 26vw;
     position: absolute;
     padding: 21px;
@@ -8,6 +8,8 @@ main{
     gap: 3rem;
     place-items: center !important;
     border-radius: 14px;
+    margin-left: 30%;
+    margin-top: 7%;
 }
 
 #wexerLogoBack{
@@ -48,6 +50,7 @@ main{
     gap: 3rem;
     place-items: center;
     border-radius: 14px;
+    box-shadow: 1px 1px 5px lightgray;
 }
 
 #infoPassword{
@@ -56,7 +59,7 @@ main{
 }
 
 #registrationBack{
-    width: 33%;
+    width: 25%;
     background-color: #017849;
     margin: 50px auto;
     padding: 14px;
@@ -65,7 +68,6 @@ main{
 }
 
 #registrationBack>div>hr{
-    width: 32vw;
     margin-top: -10px;
 }
 
@@ -77,7 +79,7 @@ main{
 
 .inputRegLine{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 .inputRegLine>div>label{
     display: flex;
@@ -88,7 +90,8 @@ main{
     font-size: 12px;
 }
 .inputRegLine>div>label>input{
-    padding: 5px;
+    padding: 9px;
+    width: 100%;
     border-radius: 7px;
     outline: none;
     border: none;
@@ -108,10 +111,60 @@ main{
 }
 
 select{
-    padding: 5px;
+    padding: 9px;
     border-radius: 7px;
 }
 
 .margin-top{
     margin-top: 15px;
+}
+.inputLogin{
+    padding: 12px;
+    width: 400px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.whiteColor{
+    color: white !important;
+}
+
+.blackColor{
+    color: black !important;
+}
+
+.forgotPassword{
+    color: white;
+    text-decoration: underline;
+}
+
+.forgotPassDiv{
+    display: block;
+    text-align: end;
+}
+
+.buttonLogin{
+    border-radius: 35px;
+    background-color: #017849;
+    border: 1px solid white;
+    padding: 16px 190px;
+}
+
+.buttonLine{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backGreen{
+    width: 100%;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    padding: .3rem;
 }

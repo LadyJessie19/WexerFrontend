@@ -12,7 +12,7 @@ const MainBar = ({menuHandle}:any) => {
          <Link to="/home"><span>Voltar para Home</span></Link>
         </div>
         <div id='rightMainBar'>
-         <span>Bem vindo(a), <strong>Daniel</strong></span>
+         <Link to="/"><span>Bem vindo(a), <strong>Daniel</strong></span></Link>
          <img src="/main-bar/Mask.svg" width={'16px'} />
         </div>
       </header>

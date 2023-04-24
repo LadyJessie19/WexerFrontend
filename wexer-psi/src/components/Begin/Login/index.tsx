@@ -10,25 +10,25 @@ const Login = () => {
           </div>
           <div id="inputSpace">
             <div>
-              <label>
+              <label className="flexCol whiteColor">
                 Login
-                <input type="text" />
+                <input className="inputLogin" value='daniel.silva@wexer.com.br' type="text" />
               </label>
             </div>
             <div>
-              <label>
+              <label className="flexCol whiteColor">
                 Senha
-                <input type="text" />
+                <input className="inputLogin" value="****************" type="text" />
               </label>
             </div>
-            <div>
-              <small>Esqueci a senha</small>
+            <div className="forgotPassDiv">
+              <small className="forgotPassword">Esqueci a senha</small>
             </div>
             <div>
-              <button><Link to="/home">Entrar</Link></button>
+              <button className="buttonLogin"><Link to="/home">Entrar</Link></button>
             </div>
             <div>
-              <p><Link to="/registo-nome"> Cadastre-se gratuitamente</Link></p>
+              <p className="whiteColor"><Link to="/registo-nome"> Cadastre-se gratuitamente</Link></p>
             </div>
           </div>
         </main>

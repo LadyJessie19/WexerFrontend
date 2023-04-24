@@ -27,7 +27,7 @@ const PatientReg = () => {
             </div>
             <div className="dFlexRow">
               <ButtonSave />
-              <ButtonBack />
+              <ButtonBack backPath="/pacientes" />
             </div>
           </div>
           <div id="sectionBody">

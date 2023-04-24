@@ -8,7 +8,7 @@ function Pagination({ currentPage, totalPages, onPageChange }) {
     <ul className="pagination">
       {pageNumbers.map(number => (
         <li key={number} className={number === currentPage ? 'active' : null}>
-          <a href="#" onClick={() => onPageChange(number)}>{number}</a>
+          <a href="#" className='colorBlue' onClick={() => onPageChange(number)}>{number}</a>
         </li>
       ))}
     </ul>

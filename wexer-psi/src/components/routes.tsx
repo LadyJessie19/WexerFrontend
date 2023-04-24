@@ -2,15 +2,15 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Begin from "./Begin";
 import Reusable from "../reusable";
-import UserScreen from "./UserScreen";
+import User from "./UserScreen/User";
 import RegName from "./Begin/RegName";
 import Interview from "./Main/Interview";
 import RegPassword from "./Begin/RegPassword";
 import PatientsScreen from "./PatientsScreen";
+import Invoicing from "./UserScreen/Invoicing";
 import Registration from "./Begin/Registration";
 import MedicalRecord from "./Main/MedicalRecord";
 import PatientReg from "./PatientsScreen/PatientReg";
-import PatientsList from "./PatientsScreen/PatientsList";
 import ReportScreen from "./Main/Interview/ReportScreen";
 import FeedbackScreen from "./Main/Interview/FeedbackScreen";
 import SimpleScreen from "./Main/Interview/ReportSingleScreen";
@@ -47,12 +47,12 @@ const AppRoutes = () => {
         <Route path="/declaracao" element={<SimpleScreen compTitle="Declaração" backPath="/entrevista"/>} />
         <Route path="/parecer" element={<SimpleScreen compTitle="Parecer" backPath="/entrevista"/>} />
         
-        <Route path="/tela-pacientes" element={<PatientsScreen />}/>
+        <Route path="/pacientes" element={<PatientsScreen />}/>
 
-        <Route path="/pacientes" element={<PatientsList />}/>
         <Route path="/paciente-info" element={<PatientReg />}/>
 
-        <Route path="/usuario" element={<UserScreen />}/>
+        <Route path="/usuario" element={<User />}/>
+        <Route path="/faturamento" element={<Invoicing />}/>
     </Routes>
   )
 }

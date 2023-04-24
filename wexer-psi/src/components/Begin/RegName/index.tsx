@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import ButtonNext from "../../../reusable/Buttons/ButtonNext";
 
-const Login = () => {
+const RegName = () => {
   return (
     <>
+      <img src="/login/logo.svg" id="wexerLogoBack" />
       <div className="whiteBack">
         <main>
           <div id="logoSpace">
@@ -12,19 +14,19 @@ const Login = () => {
           </div>
           <div id="inputSpace">
             <div>
-              <label>
+              <label className="flexCol blackColor">
                 Nome
-                <input type="text" />
+                <input className="inputLogin" value="Daniel Silva" type="text" />
               </label>
             </div>
             <div>
-              <label>
+              <label className="flexCol blackColor">
                 Email
-                <input type="text" />
+                <input className="inputLogin" value="daniel.wexer@wexer.com.br" type="text" />
               </label>
             </div>
-            <div>
-              <button><Link to={"/registo-senha"}>Prosseguir</Link></button>
+            <div className="buttonLine">
+              <Link to={"/registo-senha"}><ButtonNext /></Link>
             </div>
           </div>
         </main>
@@ -33,4 +35,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default RegName;

@@ -16,7 +16,7 @@ const SideBar = ({ menuOpen, setMenuOpen }) => {
           <div id="bottomNavBar">
             <div className="barLine">
                 <img src="/side-bar/people.svg" width={"24px"} />
-              <Link to="/tela-pacientes">
+              <Link to="/pacientes">
                 <div>Meus pacientes</div>
               </Link>
             </div>
@@ -48,7 +48,7 @@ const SideBar = ({ menuOpen, setMenuOpen }) => {
             <img src="/side-bar/logo.svg" onClick={menuHandle} />
           </div>
           <div id="bottomNavBar">
-            <Link to="/tela-pacientes">
+            <Link to="/pacientes">
               <img src="/side-bar/people.svg" width={"24px"} />
             </Link>
             <Link to="/entrevista">

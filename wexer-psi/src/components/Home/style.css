@@ -46,12 +46,16 @@
     width: 792px;
     height: 594px;
     background-color: white;
-    position: absolute;
+    
+    position: relative;
     top: 334px;
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    padding: .5rem;
 }
+
 
 #headerPatients{
     display: flex;
@@ -61,20 +65,26 @@
     padding: .5rem;
 }
 
+#tablePatients{
+  width: 100%;
+}
+
 table{
     border: 1px solid grey;
-    width: 744px;
-    height: 355px;
-    text-align: center;
 }
+
 td{
     border: 1px solid rgb(0, 0, 0);
 }
 
+.colorBlue{
+  color:#2F80ED !important;
+}
+
 .pagination{
     position: absolute;
-    bottom: -50px;
-    left: 470px;
+    bottom: 0;
+    left: 600px;
     display: flex;
     gap: .5rem;
     list-style: none;

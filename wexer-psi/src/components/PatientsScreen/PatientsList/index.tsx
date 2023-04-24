@@ -21,7 +21,7 @@ const PatientsList = () => {
       <div className='divPatientsScreen'>
         <div id="sectionHeader">
           <div>
-            <Link to="/registro-paciente"><ButtonNewReg /></Link>
+            <Link to="/registro-paciente"><ButtonNewReg lightTheme={false} /></Link>
           </div>
           <div>
             <input type="search" />
@@ -38,11 +38,11 @@ const PatientsList = () => {
                 {" "}
                 <input type="checkbox" />{" "}
               </th>
-              <th>Código</th>
-              <th>Nome</th>
-              <th>CPF</th>
-              <th>Guia</th>
-              <th>Prontuário</th>
+              <th className='colorBlue'>Código</th>
+              <th className='colorBlue'>Nome</th>
+              <th className='colorBlue'>CPF</th>
+              <th className='colorBlue'>Guia</th>
+              <th className='colorBlue'>Prontuário</th>
               <th>&nbsp;</th>
             </tr>
             <tr>
@@ -57,7 +57,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <ButtonTinyEdit />
+                <Link to="/paciente-info"><ButtonTinyEdit /></Link>
               </td>
             </tr>
             <tr>
@@ -72,7 +72,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <ButtonTinyEdit />
+                <Link to="/paciente-info"><ButtonTinyEdit /></Link>
               </td>
             </tr>
             <tr>
@@ -87,7 +87,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <ButtonTinyEdit />
+                <Link to="/paciente-info"><ButtonTinyEdit /></Link>
               </td>
             </tr>
             <tr>
@@ -102,7 +102,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <ButtonTinyEdit />
+                <Link to="/paciente-info"><ButtonTinyEdit /></Link>
               </td>
             </tr>
             <tr>
@@ -117,7 +117,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <ButtonTinyEdit />
+                <Link to="/paciente-info"><ButtonTinyEdit /></Link>
               </td>
             </tr>
             <tr>
@@ -132,7 +132,7 @@ const PatientsList = () => {
               <td>&nbsp;</td>
               <td>
                 {" "}
-                <ButtonTinyEdit />
+                <Link to="/paciente-info"><ButtonTinyEdit /></Link>
               </td>
             </tr>
           </table>

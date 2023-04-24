@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
-#divHeader{
+.divHeader{
     font-weight: 500;
     font-family: 'Confortaa';
     font-size: 26px;
@@ -22,7 +22,7 @@ main{
     border-radius: 14px;
     padding: 1rem;
 }
-#sectionHeader{
+.sectionHeader{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -43,7 +43,7 @@ table {
     display: flex;
 }
 
-#sectionHeader>div>span{
+.sectionHeader>div>span{
     border-bottom: .5px solid lightgray;
     border-right: .5px solid lightgray;
     padding:  0 .5rem;
@@ -78,6 +78,29 @@ table {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+    position: relative;
+}
+
+.inputSolo{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.inputSelf{
+    outline: none;
+    padding: 12px;
+    border-radius: 7px;
+    width: 300px !important;
+    border: 1px solid lightgray !important;
+}
+
+.smallInput{
+    outline: none;
+    padding: 12px;
+    border-radius: 7px;
+    width: 100px !important;
+    border: 1px solid lightgray !important;
 }
 
 .spaceBetween{
@@ -86,21 +109,75 @@ table {
     flex-direction: row;
 }
 
-.inputSolo{
-    display: flex;
-    flex-direction: column;
-}
-
-.inputSolo>input{
-    padding: 12px;
-    border-radius: 7px;
-    border: 1px solid lightgray;
-    outline: 0;
-    width: 300px;
-}
-
 .compUser{
     position: absolute;
-    top: 130px;
+    top: 110px;
     left: 140px;
+}
+
+.navHeader{
+    padding: .1rem 1rem;
+    display: flex;
+}
+.navHeader div{
+    border-bottom: 1px solid lightgrey !important;
+    border-right: 1px solid lightgrey !important;
+    padding: 0 2rem;
+}
+
+.navHeader h3{
+    font-weight: 500;
+    font-family: Comfortaa;
+    font-size: 21px !important;
+}
+
+.colorGreen{
+    color: #017849 !important;
+}
+
+.greyCard{
+    background-color: #F2F2F2;
+    border-radius: 14px;
+    width: 60vw;
+    height: 203px;
+}
+
+.contentCard{
+    display: flex;
+    padding: 1rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dFlex{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.colorBlue{
+    color: #009BDF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.font600{
+    font-weight: 600;
+}
+
+.creditCard{
+    margin-top: 1.5rem;
+    align-items: center;
+}
+
+.btnGreen{
+    background-color: #017849;
+    border-radius: 32px;
+    color: white;
+    padding: 1rem 5rem;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 1px 1px 3px rgb(134, 134, 134);
 }

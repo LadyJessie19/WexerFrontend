@@ -17,17 +17,19 @@ const Patients = () => {
       <div id='backPatients'>
           <div id="headerPatients">
           <ModalWelcome/>
+          <div>
             <input type="search" placeholder='Pesquisar' />
             <input type="submit" value="Filtrar" />
           </div>
-          <div id="tablePatients">
-            <table>
+          </div>
+          <div >
+            <table id="tablePatients">
                 <tbody>
                   <tr>
                     <td><input type="checkbox" /></td>
-                    <td>Código</td>
-                    <td>Nome</td>
-                    <td>CPF</td>
+                    <td className='colorBlue'>Código</td>
+                    <td className='colorBlue'>Nome</td>
+                    <td className='colorBlue'>CPF</td>
                     <td>&nbsp;</td>
                   </tr>
                 <tr>

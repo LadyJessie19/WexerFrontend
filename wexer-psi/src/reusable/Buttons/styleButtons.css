@@ -124,17 +124,20 @@ button:hover{
     margin: .5rem;
 }
 
-.buttonEdit{
-
-}
-
-.buttonWatch{
-}
-
 .buttonTrash{
     border: 1px solid #EB5757;
 }
 
 .fontSizeLower{
     font-size: 16px;
+}
+
+.lightTheme{
+    background-color: white !important;
+    color: #000000 !important;
+}
+
+.lightTheme:hover{
+    background-color: #616161 !important;
+    color: white !important;
 }

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import ButtonNewReg from "../../../reusable/Buttons/ButtonNewReg"
 
 const Registration = () => {
   return (
@@ -6,7 +7,7 @@ const Registration = () => {
         <div id="registrationBack">
             <div id="regHeader">
                 <img src="/login/regLogo.svg"/>
-                <span>Seja bem-vindo(a)!</span>
+                <span className="whiteColor">Seja bem-vindo(a)!</span>
             </div>
             <div>
                 <p>Complete os seus dados</p>
@@ -17,13 +18,13 @@ const Registration = () => {
                     <div>
                         <label>
                             Nome
-                            <input type="text" />
+                            <input value="Daniel" type="text" />
                         </label>
                     </div>
                     <div>
                         <label>
                             Email
-                            <input type="text" />
+                            <input value="daniel@gmail.com" type="text" />
                         </label>
                     </div>
                 </div>
@@ -31,13 +32,13 @@ const Registration = () => {
                     <div >
                         <label>
                             CPF
-                            <input type="text" />
+                            <input value="132.655.595.466" type="text" />
                         </label>
                     </div>
                     <div>
                         <label>
                             Telefone
-                            <input type="text" />
+                            <input value="(31)" type="text" />
                         </label>
                     </div>
                 </div>
@@ -45,7 +46,7 @@ const Registration = () => {
                     <div >
                         <label>
                             Documento Profissional (CRP)
-                            <input type="text" />
+                            <input value="464654165196514" type="text" />
                         </label>
                     </div>
                     <div>
@@ -68,13 +69,13 @@ const Registration = () => {
                     <div >
                         <label>
                             Nome da clínica
-                            <input type="text" />
+                            <input value="Talita Rodrigues" type="text" />
                         </label>
                     </div>
                     <div>
                         <label>
                             CEP
-                            <input type="text" />
+                            <input value="32681779" type="text" />
                         </label>
                     </div>
                 </div>
@@ -82,17 +83,17 @@ const Registration = () => {
                     <div >
                         <label>
                             Rua
-                            <input type="text" />
+                            <input value="Flores" type="text" />
                         </label>
                     </div>
                     <div className="dFlexRow">
                         <label className="labelShort">
                             Numero
-                            <input type="text" className="inputShort"/>
+                            <input value="25" type="text" className="inputShort"/>
                         </label>
                         <label className="labelShort">
                             Bairro
-                            <input type="text"  className="inputShort"/>
+                            <input type="text" value="Alterosa" className="inputShort"/>
                         </label>
                     </div>
                 </div>
@@ -100,13 +101,13 @@ const Registration = () => {
                     <div >
                         <label>
                             Cidade
-                            <input type="text" />
+                            <input value="Betim" type="text" />
                         </label>
                     </div>
                     <div>
                         <label>
                             Estado
-                            <input type="text" />
+                            <input value="Minas Gerais" type="text" />
                         </label>
                     </div>
                 </div>
@@ -120,19 +121,19 @@ const Registration = () => {
                     <div >
                         <label>
                             Senha
-                            <input type="password" />
+                            <input value="********" type="password" />
                         </label>
                     </div>
                     <div>
                         <label>
                             Confirmar
-                            <input type="text" />
+                            <input value="********" type="text" />
                         </label>
                     </div>
                 </div>
                 <div className="inputRegLine margin-top">
-                    <div>
-                        <Link to={"/home"}><button>Cadastrar</button></Link>
+                    <div className="backGreen">
+                        <Link to={"/home"}><ButtonNewReg lightTheme={true}/></Link>
                     </div>
                 </div>
             </div>

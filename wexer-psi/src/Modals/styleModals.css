@@ -84,7 +84,7 @@
 .input{
   width: 90%;
   border-radius: 9px;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 .mb1{
@@ -103,4 +103,14 @@
 
 .greenText{
   color: #00995D;
+}
+
+.btnSave{
+  background-color: #00995D;
+  padding: 17px 225px;
+  color: white;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
 }
