@@ -1,0 +1,37 @@
+.searchWexer{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.searchInputWexer{
+    display: flex;
+    width: fit-content;
+}
+
+.inputSearchWexer{
+    border: 1px solid lightgray;
+    padding: 1rem;
+    outline: none;
+    border-radius: 40px 0px 0px 40px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.btnSearchWexer{
+    background-color: #00995D;
+    padding: 1rem 2rem;
+    border: none;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 0px 40px 40px 0px;
+}
+
+.smallSearchWexer{
+    color: #017849;
+    cursor: pointer;
+}

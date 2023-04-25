@@ -32,7 +32,7 @@ const Interview = () => {
               <Link to="/atestado"><li>Atestado</li></Link>
             </ul>
             <ul>
-              <Link to="/relatorios"><li>Relatorios</li></Link>
+              <Link to="/relatorios"><li>Relatórios</li></Link>
             </ul>
             <ul>
               <Link to="/declaracao"><li>Declaração</li></Link>

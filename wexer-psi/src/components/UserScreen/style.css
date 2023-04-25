@@ -74,9 +74,9 @@ table {
     padding: 2rem 2rem 0;
 }
 
-.inputsLine{
+.inputsLineUser{
     display: flex;
-    gap: 1rem;
+    gap: 5rem;
     margin-bottom: 2rem;
     position: relative;
 }

@@ -5,6 +5,7 @@ import ModalWelcome from '../ModalWelcome'
 import { Link } from 'react-router-dom'
 import ButtonTinyWatch from '../../../reusable/Buttons/ButtonsTiny/ButtonTinyWatch'
 import '../../../reusable/Buttons/styleButtons.css'
+import SearchInputWexer from '../../../reusable/SearchInputWexer'
 
 const Patients = () => {
   const [pages, setPages] = useState(1)
@@ -18,8 +19,7 @@ const Patients = () => {
           <div id="headerPatients">
           <ModalWelcome/>
           <div>
-            <input type="search" placeholder='Pesquisar' />
-            <input type="submit" value="Filtrar" />
+            <SearchInputWexer />
           </div>
           </div>
           <div >

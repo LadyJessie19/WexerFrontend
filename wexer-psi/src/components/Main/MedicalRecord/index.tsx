@@ -1,10 +1,12 @@
 import { useState } from "react"
 import SideBar from "../../SideBar"
-import InfoSide from "./InfoSide"
-import MedicalRecordSide from "./MedicalRecordSide"
-import SearchBar from "./SearchBar"
-import '../style.css'
 import MainBar from "../../MainBar"
+
+import InfoSide from "./InfoSide"
+import SearchBar from "./SearchBar"
+import MedicalRecordSide from "./MedicalRecordSide"
+
+import '../style.css'
 import '../../../reusable/Buttons/styleButtons.css'
 
 const MedicalRecord = () => {

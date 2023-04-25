@@ -12,9 +12,26 @@ import RichTextBox from './TextBox'
 import TinyBarButtons from './TinyBarButtons'
 import Modals from '../Modals'
 import Buttons from './Buttons'
+import SearchInputWexer from './SearchInputWexer'
+import DropdownList from './DropdownList'
 
 const Reusable = () => {
     const [text, setText] = useState('Digite aqui')
+    /* Type 'string' is not assignable to type '{ id: number; label: string; }' */
+    const items = [
+      {
+        id: 1,
+        label: 'item 1'
+      },
+      {
+        id: 2,
+        label: 'item 2'
+      },
+      {
+        id: 3,
+        label: 'item 3'
+      }
+    ]
   return (
     <>
         <div id="reusableSpace">
@@ -43,6 +60,9 @@ const Reusable = () => {
             <hr />
             <Modals />
             <hr />
+            <SearchInputWexer />
+            <hr />
+            <DropdownList title={'Lista'} items={[ items[0], items[1], items[2]]} />
         </div>
     </>
   )

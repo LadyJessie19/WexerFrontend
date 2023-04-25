@@ -11,7 +11,7 @@ const FieldsClinic = () => {
   return (
     <>
       <div id="inputsGeneral">
-        <div className="inputsLine">
+        <div className="inputsLineUser">
           <div className="inputSolo">
             <label>Nome da clínica</label>
             <input value="Talita Rodrigues" className="inputSelf" type="text" />
@@ -29,7 +29,7 @@ const FieldsClinic = () => {
             <input value="25" className="smallInput" type="text" />
           </div>
         </div>
-        <div className="inputsLine">
+        <div className="inputsLineUser">
           <div className="inputSolo">
             <label>Bairro</label>
             <input value="Alterosa" className="inputSelf" type="text" />

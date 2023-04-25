@@ -21,15 +21,16 @@
     background-color: rgb(255, 255, 255);
     border-radius: 9px;
     padding: 30px;
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #leftSearchBar>span{
-    padding: 1rem;
+    padding: 1rem 3rem;
     border-right: 1px solid rgb(218, 215, 215);
+    border-bottom: 1px solid rgb(218, 215, 215);
 }
 
 .searchSpan{

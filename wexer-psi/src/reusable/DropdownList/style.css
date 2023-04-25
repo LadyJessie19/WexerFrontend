@@ -1,0 +1,23 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: .5rem 2rem;
+    color: white;
+}
+
+
+.dropdown-toggle {
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  .dropdown-item{
+    background-color: #017849;
+    position: relative;
+    right: 160px;
+    top: 21px;
+    padding: .7rem 2rem;
+    width: 160px;
+    font-size: 15px;
+  }

@@ -8,6 +8,7 @@ import ButtonNewReg from '../../../reusable/Buttons/ButtonNewReg';
 import ButtonTinyEdit from '../../../reusable/Buttons/ButtonsTiny/ButtonTinyEdit';
 
 import '../style.css'
+import SearchInputWexer from '../../../reusable/SearchInputWexer';
 const PatientsList = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -24,11 +25,7 @@ const PatientsList = () => {
             <Link to="/registro-paciente"><ButtonNewReg lightTheme={false} /></Link>
           </div>
           <div>
-            <input type="search" />
-            <button type="submit">Filtrar</button>
-            <div>
-              <small>Filtro simples</small>
-            </div>
+            <SearchInputWexer />
           </div>
         </div>
         <div id="sectionBody">

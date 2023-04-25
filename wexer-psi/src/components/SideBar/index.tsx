@@ -1,10 +1,34 @@
-import { useState } from "react";
+import Dropdown from "../../reusable/DropdownList";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-const SideBar = ({ menuOpen, setMenuOpen }) => {
-  const menuHandle = () => setMenuOpen(!menuOpen);
+type PropsSideBar = {
+  menuOpen: boolean;
+  setMenuOpen: () => void;
+}
 
+const SideBar = ({ menuOpen, setMenuOpen }:PropsSideBar) => {
+  const menuHandle = () => {
+    setMenuOpen(!menuOpen);
+   } 
+
+   const itemsModel = [
+    {id: 1,
+    label: 'Entrevistas'},
+    {id: 2,
+    label: 'Roteiro de testes'},
+    {id: 3,
+    label: 'Documentos'}
+   ]
+
+   const itemsRegister = [
+    {id: 1,
+    label: 'Perguntas'},
+    {id: 2,
+    label: 'Testes'},
+    {id: 3,
+    label: 'Tipo de avaliações'}
+   ]
   return (
     <>
       {menuOpen ? (
@@ -19,6 +43,9 @@ const SideBar = ({ menuOpen, setMenuOpen }) => {
               <Link to="/pacientes">
                 <div>Meus pacientes</div>
               </Link>
+              <div className="whiteArrowDiv">
+                <Dropdown items={itemsModel}/>
+              </div>
             </div>
             <div className="barLine">
               <img src="/side-bar/todo-fill.svg" width={"24px"} />

@@ -11,7 +11,7 @@ const FieldsData = () => {
     return (
       <>
           <div id="inputsGeneral">
-              <div className="inputsLine">
+              <div className="inputsLineUser">
                   <div className="inputSolo">
                   <label>Nome</label>
                       <input value="Daniel" className="inputSelf" type="text" />
@@ -29,7 +29,7 @@ const FieldsData = () => {
                       <input value="(31)" className="inputSelf" type="text" />
                   </div>
               </div>
-              <div className="inputsLine">
+              <div className="inputsLineUser">
                   <div className="inputSolo">
                   <label>Documento Profissional</label>
                       <input value="464654165196514" className="inputSelf" type="text" />

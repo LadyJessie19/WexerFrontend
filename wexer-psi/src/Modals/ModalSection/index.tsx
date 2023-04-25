@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import "../styleModals.css";
-import ButtonCreate from '../../reusable/Buttons/ButtonCreate';
 import '../../reusable/Buttons/styleButtons.css'
+
+import ButtonCreate from '../../reusable/Buttons/ButtonCreate';
 
 function ModalSection() {
   const [isOpen, setIsOpen] = useState(false);
