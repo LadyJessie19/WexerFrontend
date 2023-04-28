@@ -78,3 +78,37 @@
     top: 15%;
     left: 7%;
   }
+
+  .buttonBig{
+    background-color: #017849;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 32px;
+    color: white;
+    font-weight: 600;
+    border: 3px solid white;
+  }
+
+  .buttonBig:hover{
+    border: 3px solid #2D9CDB;
+  }
+
+  .imgButton{
+    border: .5px solid #017849;
+  }
+
+  .imgButton:hover{
+    border: .5px solid #2D9CDB;
+    border-radius: 50%;
+  }
+
+  .interviewLine{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+  }

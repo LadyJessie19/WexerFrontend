@@ -52,6 +52,9 @@ const SideBar = ({ menuOpen, setMenuOpen }:PropsSideBar) => {
               <Link to="/entrevista">
                 <div>Modelos</div>
               </Link>
+              <div className="whiteArrowDiv">
+                <Dropdown items={itemsRegister}/>
+              </div>
             </div>
 
             <div className="barLine">

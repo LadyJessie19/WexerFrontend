@@ -1,7 +1,18 @@
 import { Link } from "react-router-dom";
 import ButtonNext from "../../../reusable/Buttons/ButtonNext";
+import { useState } from "react";
 
 const RegName = () => {
+  const initialUser = {
+    name: '',
+    email: ''
+  }
+  const [user, setUser] = useState(initialUser)
+
+  const keepUserData = () => {
+    localStorage.setItem('newUser_name_email', JSON.stringify(user))
+  }
+
   return (
     <>
       <img src="/login/logo.svg" id="wexerLogoBack" />
@@ -16,17 +27,17 @@ const RegName = () => {
             <div>
               <label className="flexCol blackColor">
                 Nome
-                <input className="inputLogin" value="Daniel Silva" type="text" />
+                <input className="inputLogin" value={user.name} onChange={(e) => setUser({...user, name: e.target.value})} type="text" />
               </label>
             </div>
             <div>
               <label className="flexCol blackColor">
                 Email
-                <input className="inputLogin" value="daniel.wexer@wexer.com.br" type="text" />
+                <input className="inputLogin" value={user.email} onChange={(e) => setUser({...user, email: e.target.value})} type="text" />
               </label>
             </div>
             <div className="buttonLine">
-              <Link to={"/registo-senha"}><ButtonNext /></Link>
+              <Link to={"/registo-senha"}><ButtonNext onClick={keepUserData}/></Link>
             </div>
           </div>
         </main>

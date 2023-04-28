@@ -68,3 +68,8 @@ div>span{
     color: white;
     font-size: 14px;
 }
+
+.whiteArrowDiv{
+    position: relative;
+    left: 40px;
+}

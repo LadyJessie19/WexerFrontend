@@ -168,3 +168,11 @@ select{
     justify-content: center;
     padding: .3rem;
 }
+
+.smallRed{
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: white;
+    padding: .1rem;
+}

@@ -36,6 +36,7 @@
 #textBanner>h1{
     font-weight: 600;
     font-family: Comfortaa !important;
+    width: 20vw;
 }
 #textBanner>p{
     font-weight: 300;

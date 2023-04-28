@@ -1,7 +1,27 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ButtonNext from "../../../reusable/Buttons/ButtonNext";
+import { useState } from "react";
 
 const RegPassword = () => {
+  const [password, setPassword] = useState('')
+  const [confirm, setConfirm] = useState('')
+  
+  const [error, setError] = useState(false)
+
+  const navigate = useNavigate()
+
+  const keepUserData = () => {
+    localStorage.setItem('newUser_password', JSON.stringify(password))
+  }
+
+  const passChecker = () => {
+    if(confirm === password){
+      keepUserData()
+      navigate('/registo-info')
+    } else {
+      setError(true)
+    }
+  }
     return (
       <>
         <img src="/login/logo.svg" id="wexerLogoBack" />
@@ -16,13 +36,13 @@ const RegPassword = () => {
               <div>
                 <label className="flexCol blackColor">
                   Senha
-                  <input className="inputLogin" type="password" />
+                  <input className="inputLogin" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                 </label>
               </div>
               <div>
                 <label className="flexCol blackColor">
                   Confirmar senha
-                  <input className="inputLogin" type="password" />
+                  <input className="inputLogin" type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)}/>
                 </label>
               </div>
               <div id="infoPassword">
@@ -30,8 +50,12 @@ const RegPassword = () => {
                 <small>*Precisa conter um caractere especial */+.</small>
                 <small>*Precisa conter uma letra em MAIÚSCULA</small>
               </div>
+              <div>
+                {error && <small className="smallRed">As senhas não são iguais!</small>}
+              </div>
               <div className="buttonLine">
-                <Link to="/registo-info"><ButtonNext /></Link>
+                {/* <Link to="/registo-info"><ButtonNext /></Link> */}
+                <ButtonNext onClick={passChecker}/>
               </div>
             </div>
           </main>

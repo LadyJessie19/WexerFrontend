@@ -1,7 +1,11 @@
-const ButtonNext = () => {
+type CompProps = {
+  onClick?: () => void
+}
+
+const ButtonNext = ({onClick}:CompProps) => {
     return (
       <>
-        <button className='buttonDesign buttonNext'>Prosseguir <img src="/buttons/whiteArrow.svg" /></button>
+        <button className='buttonDesign buttonNext' onClick={onClick}>Prosseguir <img src="/buttons/whiteArrow.svg" /></button>
       </>
     )
   }
