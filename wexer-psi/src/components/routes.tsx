@@ -39,6 +39,13 @@ const AppRoutes = () => {
         <Route path="/teste" element={<TestApplication />}/>
         <Route path="/comportamento" element={<BehavioralObservation />}/>
 
+        <Route path="/pacientes" element={<PatientsScreen />}/>
+
+        <Route path="/paciente-info" element={<PatientReg />}/>
+
+        <Route path="/usuario" element={<User />}/>
+        <Route path="/faturamento" element={<Invoicing />}/>
+
         <Route path="/entrevista" element={<Interview />}/>
         <Route path="/devolutivas" element={<FeedbackScreen />} />
         <Route path="/laudos" element={<ReportScreen />} />
@@ -47,13 +54,6 @@ const AppRoutes = () => {
         <Route path="/relatorios" element={<SimpleScreen compTitle="Relatórios" backPath="/entrevista"/>} />
         <Route path="/declaracao" element={<SimpleScreen compTitle="Declaração" backPath="/entrevista"/>} />
         <Route path="/parecer" element={<SimpleScreen compTitle="Parecer" backPath="/entrevista"/>} />
-        
-        <Route path="/pacientes" element={<PatientsScreen />}/>
-
-        <Route path="/paciente-info" element={<PatientReg />}/>
-
-        <Route path="/usuario" element={<User />}/>
-        <Route path="/faturamento" element={<Invoicing />}/>
     </Routes>
   )
 }

@@ -3,7 +3,12 @@ import "../styleModals.css";
 import ButtonTinyEdit from "../../reusable/Buttons/ButtonsTiny/ButtonTinyEdit";
 import ButtonTinyClose from "../../reusable/Buttons/ButtonsTiny/ButtonTinyClose";
 
-function ModalService() {
+type PropsComp = {
+  name: string,
+  id: string
+}
+
+function ModalService({name, id}:PropsComp) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleModal = () => {
@@ -23,11 +28,11 @@ function ModalService() {
             </div>
             <div>
                 <small className="greenText fontL">Paciente</small>
-                <p>Ana Ester Resende</p>
+                <p>{name}</p>
             </div>
             <div>
-                <small className="greenText fontL">CPF</small>
-                <p>114.559.886-78</p>
+                <small className="greenText fontL">Identificação</small>
+                <p>{id}</p>
             </div>
             <div>
                 <div>

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import ButtonNewReg from "../../../reusable/Buttons/ButtonNewReg";
 import { useEffect, useState } from "react";
-import { postUserData } from "../../../services/functions";
+import { postUserData, postUser } from "../../../services/functions";
 
 const Registration = () => {
   const userRegSheet = {
@@ -20,7 +20,7 @@ const Registration = () => {
     state: "teste",
     password: "",
     passConfirm: "123456",
-    idT: "testee"
+    idT: "testeeo"
   };
   const [user, setUser] = useState(userRegSheet);
   const [error, setError] = useState(false);
@@ -36,12 +36,13 @@ const Registration = () => {
   };
 
   const passChecker = async () => {
+  
     if (user.password === user.passConfirm) {
-      const postUser = await postUserData(user)
+      const postUserNew = await postUser(user)
         .then((response) => {
           const users = response.data;
-          localStorage.setItem("createdUser", JSON.stringify(users));
-          navigate("/home");
+          localStorage.setItem('user', JSON.stringify(user))
+          navigate("/");
         })
         .catch((error) => {
           console.log("Ocorreu um erro na criação", error);

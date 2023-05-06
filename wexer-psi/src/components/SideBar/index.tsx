@@ -1,10 +1,11 @@
+import { Dispatch, SetStateAction } from "react";
 import Dropdown from "../../reusable/DropdownList";
 import "./style.css";
 import { Link } from "react-router-dom";
 
 type PropsSideBar = {
   menuOpen: boolean;
-  setMenuOpen: () => void;
+  setMenuOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 const SideBar = ({ menuOpen, setMenuOpen }:PropsSideBar) => {

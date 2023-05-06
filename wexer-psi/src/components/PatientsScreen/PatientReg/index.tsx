@@ -8,13 +8,38 @@ import MainBar from "../../MainBar";
 
 import ButtonSave from "../../../reusable/Buttons/ButtonSave";
 import ButtonBack from "../../../reusable/Buttons/ButtonBack";
+import { postPatient } from "../../../services/functions";
+import ModalNewPat from "./ModalNewPat";
 
 const PatientReg = () => {
+  const patientObj = {
+    name: 'Stela Maria',
+    birthdate: '1999-07-23',
+    profession: 'Cantor(a)',
+    schooling: 'Superior',
+    personalAnnotations: 'A paciente está buscando tratamento para síndrome do pânico'
+  }
   const [menuOpen, setMenuOpen] = useState(false);
+  const [patient, setPatient] = useState(patientObj)
+  const [created, setCreated] = useState(false)
 
   const menuHandle = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const newPatient = async () => {
+    const response = await postPatient(patient)
+    localStorage.setItem('patient_id', response.data._id)
+
+    if(response.status === 201){
+      setCreated(true)
+    }
+
+  }
+
+  const modalHandle = () => {
+    setCreated(!created)
+  }
   return (
     <>
       <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -40,7 +65,7 @@ const PatientReg = () => {
           <div className="bannerBody">
             <p>Dados gerais</p>
           </div>
-          <GeneralField />
+          <GeneralField patient={patient} setPatient={setPatient}/>
           <div className="bannerBody">
             <p>Documentos</p>
           </div>
@@ -53,13 +78,14 @@ const PatientReg = () => {
           <div className="bannerBody">
             <p>Observações</p>
           </div>
-          <ObsField />
+          <ObsField patientObs={patient.personalAnnotations} setPatient={setPatient}/>
           <div className="dFlexRow">
-            <ButtonSave />
-            <ButtonBack />
+            <ButtonSave onClick={newPatient}/>
+            <ButtonBack backPath="/pacientes"/>
           </div>
         </div>
       </div>
+      <ModalNewPat modalStatus={created} handleModal={modalHandle}/>
     </>
   );
 };

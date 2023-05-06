@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import ButtonNext from "../../../reusable/Buttons/ButtonNext";
 import { useState } from "react";
 
@@ -6,7 +6,8 @@ const RegPassword = () => {
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
   
-  const [error, setError] = useState(false)
+  // const [error, setError] = useState(false)
+  const [ruleError, setRuleError] = useState(false)
 
   const navigate = useNavigate()
 
@@ -14,12 +15,19 @@ const RegPassword = () => {
     localStorage.setItem('newUser_password', JSON.stringify(password))
   }
 
+  const regexCaps = (key:string) => {
+    return /[A-Z]/.test(key);
+  }
+  const regexSpecial = (key:string) => {
+    return /[\W_]/.test(key);
+  }
+
   const passChecker = () => {
-    if(confirm === password){
-      keepUserData()
-      navigate('/registo-info')
-    } else {
-      setError(true)
+    if(confirm === password && password.length > 7 && regexCaps(password) && regexSpecial(password)){
+        keepUserData()
+        navigate('/registo-info')
+    }else {
+      setRuleError(true)
     }
   }
     return (
@@ -51,7 +59,8 @@ const RegPassword = () => {
                 <small>*Precisa conter uma letra em MAIÚSCULA</small>
               </div>
               <div>
-                {error && <small className="smallRed">As senhas não são iguais!</small>}
+                {/* {error && <small className="smallRed">As senhas não atendem aos requisitos necessários</small>} */}
+                {ruleError && <small className="smallRed">As senhas não atendem aos requisitos necessários</small>}
               </div>
               <div className="buttonLine">
                 {/* <Link to="/registo-info"><ButtonNext /></Link> */}
