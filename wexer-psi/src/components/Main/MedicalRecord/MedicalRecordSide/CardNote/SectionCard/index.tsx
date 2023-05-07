@@ -1,5 +1,18 @@
 import './style.css'
-const SectionCard = () => {
+
+type PropsComp = {
+  content:string,
+  createdOn:string
+  }
+
+const SectionCard = ({content, createdOn}:PropsComp) => {
+  const date = () => {
+    const date = new Date(createdOn)
+    let day = date.toLocaleString('pt-BR', { day: '2-digit' })
+    const month = date.toLocaleString('pt-BR', { month: 'long' })
+    const year = date.getFullYear()
+    return `${day} de ${month} de ${year}`
+  }
   return (
     <div className="cardName sectionCard">
         <div className='divImgCard sectionLogo'>
@@ -9,10 +22,10 @@ const SectionCard = () => {
         <button> ... </button>
         <div>
         <h3>Sessão</h3>
-        <small>22 de setembro de 2022</small>
+        <small>{date()}</small>
         </div>
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, illum ex quam animi veniam dolorem enim ullam aut veritatis praesentium perspiciatis fuga, in officia cumque eveniet tempora quos unde distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum delectus asperiores, blanditiis Lorem ipsum dolor, sit amet...</p>
+            <p>{content}</p>
         </div>
     </div>
   )

@@ -19,7 +19,7 @@ const Registration = () => {
     city: "teste",
     state: "teste",
     password: "",
-    passConfirm: "123456",
+    passConfirm: "",
     idT: "testeeo"
   };
   const [user, setUser] = useState(userRegSheet);

@@ -1,7 +1,7 @@
 const BackToTop = () => {
   return (
     <div id='backToTop'>
-        <p> <img src="/main/arrowhead-up.svg" width="28px" /> Voltar para o topo</p>
+        <a href="#totop"><p> <img src="/main/arrowhead-up.svg" width="28px" /> Voltar para o topo</p></a>
     </div>
   )
 }

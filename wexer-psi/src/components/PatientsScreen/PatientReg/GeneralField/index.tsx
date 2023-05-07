@@ -57,7 +57,7 @@ const GeneralField = ({patient, setPatient}:PropsComp) => {
                     <select value={patient.schooling} onChange={(e) => setPatient({...patient, schooling: e.target.value})}>
                         <option value="Fundamental">Ensino Fundamental</option>
                         <option value="Médio">Ensino Médio</option>
-                        <option value="Superior">Ensino Superior</option>
+                        <option value="Superior" selected>Ensino Superior</option>
                     </select>
                 </div>
             </div>

@@ -19,6 +19,7 @@ const MedicalRecord = () => {
     <>
         <SideBar menuOpen={menuOpen} setMenuOpen={handleMenu} />
         <MainBar menuHandle={handleMenu}/>
+        <div id="totop"></div>
         <div id="compMedicalRecord">
           <SearchBar />
           <div id="compMedRecSplited">

@@ -13,11 +13,11 @@ import ModalNewPat from "./ModalNewPat";
 
 const PatientReg = () => {
   const patientObj = {
-    name: 'Stela Maria',
-    birthdate: '1999-07-23',
-    profession: 'Cantor(a)',
+    name: '',
+    birthdate: '',
+    profession: '',
     schooling: 'Superior',
-    personalAnnotations: 'A paciente está buscando tratamento para síndrome do pânico'
+    personalAnnotations: ''
   }
   const [menuOpen, setMenuOpen] = useState(false);
   const [patient, setPatient] = useState(patientObj)
@@ -29,12 +29,11 @@ const PatientReg = () => {
 
   const newPatient = async () => {
     const response = await postPatient(patient)
+    localStorage.removeItem('patient_id')
     localStorage.setItem('patient_id', response.data._id)
-
     if(response.status === 201){
       setCreated(true)
     }
-
   }
 
   const modalHandle = () => {
@@ -78,7 +77,7 @@ const PatientReg = () => {
           <div className="bannerBody">
             <p>Observações</p>
           </div>
-          <ObsField patientObs={patient.personalAnnotations} setPatient={setPatient}/>
+          <ObsField patient={patient} patientObs={patient.personalAnnotations} setPatient={setPatient}/>
           <div className="dFlexRow">
             <ButtonSave onClick={newPatient}/>
             <ButtonBack backPath="/pacientes"/>

@@ -16,6 +16,7 @@ const EvaluationFields = () => {
     }
   return (
     <>
+      <div id="totop"></div>
       <SideBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <MainBar menuHandle={menuHandle}/>
     <div className="sectionEval">

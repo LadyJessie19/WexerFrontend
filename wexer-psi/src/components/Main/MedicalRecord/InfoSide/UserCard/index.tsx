@@ -16,6 +16,14 @@ const UserCard = () => {
     const currentPatient = await getPatient(id);
     return setPatient(currentPatient.data);
   };
+
+  const date = () => {
+    const date = new Date(patient.birthdate)
+    let day = date.toLocaleString('pt-BR', { day: '2-digit' })
+    const month = date.toLocaleString('pt-BR', { month: '2-digit' })
+    const year = date.getFullYear()
+    return `${day}/${month}/${year}`
+  }
   
   useEffect(() => {
     getUser()
@@ -35,7 +43,7 @@ const UserCard = () => {
         <div>
           <img src="/side-section/date.svg" width={'14px'} />
           <span> Nascimento</span>
-          <p>{patient.birthdate}</p>
+          <p>{date()}</p>
         </div>
         <div>
           <img src="/side-section/bag.svg" width={'14px'} />

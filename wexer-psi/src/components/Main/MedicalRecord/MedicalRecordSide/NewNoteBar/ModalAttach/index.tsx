@@ -44,9 +44,9 @@ function ModalAttach() {
                 <textarea className="textarea" placeholder="Text"></textarea>
               </label>
               <div>
-                <label>
-                  Anexar arquivos*
-                  <input className="input" type="file" />
+                <label htmlFor="file" className="custom-file-upload">
+                Anexar arquivos*
+                  <input className="input" type="file" name="file" id="file"/>
                 </label>
               </div>
               <hr />

@@ -1,15 +1,16 @@
 type PropsComp = {
+  patient:object,
   patientObs: string,
   setPatient: () => void
 }
 
-const ObsField = ({patientObs, setPatient}:PropsComp) => {
+const ObsField = ({patient, patientObs, setPatient}:PropsComp) => {
   return (
     <>
       <div id="obsSpace">
         <label htmlFor="textArea">
           Observações
-          <textarea name="textArea" id="textArea" value={patientObs} onChange={(e) => setPatient({...patient, obsField: e.target.value})}></textarea>
+          <textarea name="textArea" id="textArea" placeholder={patientObs} onChange={(e) => setPatient({...patient, personalAnnotations: e.target.value})}></textarea>
         </label>
       </div>
     </>
