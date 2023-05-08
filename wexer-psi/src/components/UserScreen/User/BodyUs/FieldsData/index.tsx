@@ -3,42 +3,56 @@ import ButtonSave from "../../../../../reusable/Buttons/ButtonSave"
 import '../../../../../reusable/Buttons/styleButtons.css'
 import ModalConfirm from "../ModalConfirm"
 
+type UserData = {
+    id: number;
+    name: string;
+    email: string;
+  }; 
+
 const FieldsData = () => {
     const [ modalOpen, setModalOpen] = useState(false)
+    const [ userData, setUserData ] = useState<UserData>()
+
     const handleModal = () => {
         setModalOpen(!modalOpen)
     }
 
-    const userData = JSON.parse(localStorage.getItem('user'))
+    const setUser = () => {
+        const user: UserData | null = JSON.parse(localStorage.getItem('user') ?? '{}');
+        if(user !== null){
+            setUserData(user)
+        }
+    }
+    
     return (
       <>
           <div id="inputsGeneral">
               <div className="inputsLineUser">
                   <div className="inputSolo">
                   <label>Nome</label>
-                      <input value={userData.name} className="inputSelf" type="text" />
+                      <input value={userData?.name} className="inputSelf" type="text" />
                   </div>
                   <div className="inputSolo">
                   <label>Email</label>
-                      <input value={userData.email} className="inputSelf" type="text" />
+                      <input value={userData?.email} className="inputSelf" type="text" />
                   </div>
                   <div className="inputSolo">
                       <label>CPF</label>
-                      <input value={userData.cpf} className="inputSelf" type="text" />
+                      <input className="inputSelf" type="text" />
                   </div>
                   <div className="inputSolo">
                       <label>Telefone</label>
-                      <input value={userData.phone} className="inputSelf" type="text" />
+                      <input className="inputSelf" type="text" />
                   </div>
               </div>
               <div className="inputsLineUser">
                   <div className="inputSolo">
                   <label>Documento Profissional</label>
-                      <input value={userData.crp} className="inputSelf" type="text" />
+                      <input className="inputSelf" type="text" />
                   </div>
                   <div className="inputSolo">
                   <label>Sexo/Gênero</label>
-                        <select className="inputSelf" value={userData.gender}>
+                        <select className="inputSelf">
                             <option value="F">Feminino</option>
                             <option value="M">Masculino</option>
                         </select>

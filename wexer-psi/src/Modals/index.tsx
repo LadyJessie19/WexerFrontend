@@ -15,7 +15,7 @@ const Modals = () => {
         <ModalAttach />
         <ModalEvaluation />
         <ModalNotes />
-        <ModalService />
+        <ModalService name={"Jéssica Moura"} id={'123'}/>
       </div>
     </>
   );

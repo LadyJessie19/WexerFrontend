@@ -8,7 +8,7 @@ const FieldsClinic = () => {
     const handleModal = () => {
         setModalOpen(!modalOpen)
     }
-    const userData = JSON.parse(localStorage.getItem('user'))
+    const userData = JSON.parse(localStorage.getItem('user') ?? '{}');
   return (
     <>
       <div id="inputsGeneral">

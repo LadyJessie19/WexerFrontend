@@ -35,7 +35,7 @@ function ModalFact() {
               <div>
                 <label>
                   Descrição*
-                  <textarea cols="30" rows="10">Text</textarea>
+                  <textarea cols={30} rows={10}>Text</textarea>
                 </label>
                 <div>
                   <small>*Campos Obrigatórios</small>

@@ -2,10 +2,11 @@ import './style.css'
 
 type PropsComp = {
   content:string,
-  createdOn:string
+  createdOn:string,
+  title:string
   }
 
-const AttachmentCard = ({content, createdOn}:PropsComp) => {
+const AttachmentCard = ({content, createdOn, title}:PropsComp) => {
   const date = () => {
     const date = new Date(createdOn)
     let day = date.toLocaleString('pt-BR', { day: '2-digit' })

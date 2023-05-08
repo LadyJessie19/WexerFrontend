@@ -77,7 +77,7 @@ const PatientReg = () => {
           <div className="bannerBody">
             <p>Observações</p>
           </div>
-          <ObsField patient={patient} patientObs={patient.personalAnnotations} setPatient={setPatient}/>
+          <ObsField patient={patient} setPatient={setPatient}/>
           <div className="dFlexRow">
             <ButtonSave onClick={newPatient}/>
             <ButtonBack backPath="/pacientes"/>

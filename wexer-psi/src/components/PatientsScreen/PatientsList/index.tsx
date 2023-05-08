@@ -29,6 +29,10 @@ const PatientsList = () => {
 
   const getUser = async () => {
     const id = localStorage.getItem("patient_id");
+    if(id === null){
+      console.log("Usuário não encontrado")
+      return;
+    }
     const currentPatient = await getPatient(id);
     return setPatient(currentPatient.data);
   };

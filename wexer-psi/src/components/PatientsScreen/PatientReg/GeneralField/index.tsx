@@ -1,7 +1,17 @@
-type PropsComp = {
-    patient: object,
-    setPatient: () => void
-}
+import React from 'react'
+
+interface Patient {
+    name: string;
+    birthdate: string;
+    profession: string;
+    schooling: string;
+    personalAnnotations: string;
+  }
+
+  type PropsComp = {
+    patient: Patient,
+    setPatient: React.Dispatch<React.SetStateAction<Patient>>
+  }
 
 const GeneralField = ({patient, setPatient}:PropsComp) => {
   return (

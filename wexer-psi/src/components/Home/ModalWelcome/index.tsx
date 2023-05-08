@@ -12,7 +12,7 @@ function Modal() {
 
   return (
     <div>
-      <ButtonNewReg btnFunction={handleModal}/>
+      <ButtonNewReg lightTheme={false} btnFunction={handleModal}/>
       {isOpen && (
         <>
           <div className="modalE-backdrop" onClick={handleModal}></div>

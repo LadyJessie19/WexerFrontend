@@ -62,7 +62,7 @@ const Reusable = () => {
             <hr />
             <SearchInputWexer />
             <hr />
-            <DropdownList title={'Lista'} items={[ items[0], items[1], items[2]]} />
+            <DropdownList items={[ items[0], items[1], items[2]]} />
         </div>
     </>
   )

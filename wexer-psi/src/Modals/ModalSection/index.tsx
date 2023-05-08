@@ -60,7 +60,7 @@ function ModalSection() {
                 <div>
                     <label>
                         Resumo da sessão*
-                        <textarea cols="30" rows="10"></textarea>
+                        <textarea cols={30} rows={10}></textarea>
                     </label>
                 </div>
             </div>

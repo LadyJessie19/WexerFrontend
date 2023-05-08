@@ -1,6 +1,6 @@
 type SpecialRadioProps = {
     firstQuestion: string;
-    arrayOptions: object;
+    arrayOptions: string[];
     extraInput: boolean;
     secondQuestion?: string;
   };  

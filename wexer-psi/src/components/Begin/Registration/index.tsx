@@ -27,13 +27,14 @@ const Registration = () => {
   const navigate = useNavigate();
 
   const fillUserData = () => {
-    const objName = JSON.parse(localStorage.getItem("newUser_name_email")).name;
-    const objEmail = JSON.parse(
-      localStorage.getItem("newUser_name_email")
-    ).email;
-    const objPassword = JSON.parse(localStorage.getItem("newUser_password"));
+    const parsedData = JSON.parse(localStorage.getItem("newUser_name_email") ?? "null");
+    const objName = parsedData?.name ?? null;
+    const objEmail = parsedData.email;
+    const objPassword = JSON.parse(localStorage.getItem("newUser_password") ?? "null");
     setUser({ ...user, name: objName, email: objEmail, password: objPassword });
   };
+  
+  
 
   const passChecker = async () => {
   

@@ -12,8 +12,11 @@ const GoalsCard = () => {
   
   const getUser = async () => {
     const id = localStorage.getItem("patient_id");
+    if(id === null){
+      console.log('Usuário não encontrado')
+      return;
+    }
     const currentPatient = await getPatient(id);
-    console.log(currentPatient)
     setUser({
       name: currentPatient.data.name,
       id: currentPatient.data._id

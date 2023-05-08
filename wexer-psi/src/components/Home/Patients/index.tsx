@@ -24,13 +24,18 @@ const Patients = () => {
   const onPageChange = (newPage: number) => {
     setPages(newPage);
   };
-
+  
   const getUser = async () => {
     const id = localStorage.getItem("patient_id");
+    if (id === null) {
+      console.log("Valor do paciente não encontrado no localStorage.");
+      return;
+    }
     const currentPatient = await getPatient(id);
     return setPatient(currentPatient.data);
   };
   
+
   useEffect(() => {
     getUser()
   }, [])

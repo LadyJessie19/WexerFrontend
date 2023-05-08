@@ -2,10 +2,12 @@ import './style.css'
 
 type PropsComp = {
   content:string,
-  createdOn:string
+  createdOn:string,
+  title:string,
+  key:string
   }
 
-const FactCard = ({content, createdOn}:PropsComp) => {
+const FactCard = ({content, createdOn, title}:PropsComp) => {
   const date = () => {
     const date = new Date(createdOn)
     let day = date.toLocaleString('pt-BR', { day: '2-digit' })

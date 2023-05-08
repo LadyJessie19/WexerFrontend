@@ -10,11 +10,12 @@ type PropsObjOcc = {
   key:string,
   title:string,
   content:string,
-  createdOn:string
+  createdOn:string,
+  _id?:string | undefined
 }
 
 const CardNote = () => {
-  const [occurrences, setOccurrences] = useState([])
+  const [occurrences, setOccurrences] = useState<PropsObjOcc[]>([])
   const timelineId = '64407e0bdafc988a50bd2602'
 
   const getTimeline = async () => {
@@ -29,10 +30,11 @@ const CardNote = () => {
   return (
     <div>
         {occurrences.map((item) => {
-          if(item.type === "relevant_fact") return <FactCard key={item._id} title={item.title} content={item.content} createdOn={item.createdOn} />
-          else if(item.type === "attachment") return <AttachmentCard key={item._id} title={item.title} content={item.content} createdOn={item.createdOn}/>
-          else if(item.type === "session") return <SectionCard key={item._id} title={item.title} content={item.content} createdOn={item.createdOn}/>
-          else return <EvaluationCard key={item._id} title={item.title} content={item.content} createdOn={item.createdOn}/>
+          const key = item._id || item.createdOn;
+          if(item.type === "relevant_fact") return <FactCard key={key} title={item.title} content={item.content} createdOn={item.createdOn} />
+          else if(item.type === "attachment") return <AttachmentCard key={key} title={item.title} content={item.content} createdOn={item.createdOn}/>
+          else if(item.type === "session") return <SectionCard key={key} title={item.title} content={item.content} createdOn={item.createdOn}/>
+          else return <EvaluationCard key={key} title={key} content={item.content} createdOn={item.createdOn}/>
         })}
     </div>
   )

@@ -31,7 +31,7 @@ const Buttons = () => {
         <ButtonCreate />
         <ButtonCancel />
         <ButtonNext />
-        <ButtonNewReg />
+        <ButtonNewReg lightTheme={false}/>
         <div id="buttonsMedRecSection">
             <ButtonSection />
             <ButtonFact />
