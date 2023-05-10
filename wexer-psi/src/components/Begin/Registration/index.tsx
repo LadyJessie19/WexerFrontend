@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import ButtonNewReg from "../../../reusable/Buttons/ButtonNewReg";
 import { useEffect, useState } from "react";
-import { postUserData, postUser } from "../../../services/functions";
+import { postUser } from "../../../services/functions";
 
 const Registration = () => {
   const userRegSheet = {

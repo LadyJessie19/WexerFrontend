@@ -17,7 +17,7 @@ const Banner = () => {
             <img src="/home/woman.svg" id="woman" />
           </div>
           <div id="textBanner">
-            <h1>Olá, {data.name}!</h1>
+            <h1>Olá, {data?.name}!</h1>
             <p>Para iniciar o atendimento, selecione ou cadastre um paciente</p>
           </div>
         </div>
