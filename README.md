@@ -13,11 +13,10 @@
 **Data de Conclusão do Desenvolvimento:** 03/05/2023 🏁  
 **Status:** Concluído ✅
 
-🚀 **Link de Deploy:** [🚫não disponível](URL_DO_DEPLOY)  
-🪂 **Link do Swagger:** [🚫não disponível](URL_DO_SWAGGER)  
+🚀 **Link de Deploy:** [Vercel Deploy](https://project-wexer.vercel.app/)
 🎨 **Link para o Figma do projeto:** [Wexer Figma](<https://www.figma.com/design/t5Z08FWfTexsU1Lj4WvmrL/Wexer-Psi-%7C-Prontu%C3%A1rio-V4-(Copy)?node-id=0-1&t=qswzIWb4pIHjUfuJ-0>)
 
-## **Tecnologias Utilizadas:** ⚛️
+## **Tecnologias Utilizadas:** 🛠️
 
 - **React.js** com Vite para inicialização rápida do projeto
 - **TypeScript** para tipagem estática
@@ -66,7 +65,7 @@ Wexer Psi é uma ferramenta de gestão para psicólogos, que permite o cadastro 
 
 ## Equipe de Desenvolvimento 🙋‍♀️
 
-<img src="./wexer-psi/src/assets/readme/jessie-dev.jpg" alt="Developer" width="150" height="150">
+<img src="./wexer-psi/src/assets/readme/jessie-dev.jpg" alt="Developer" width="200" />
 
 - Desenvolvedora: [Jessie Bentes](https://github.com/LadyJessie19)
 
