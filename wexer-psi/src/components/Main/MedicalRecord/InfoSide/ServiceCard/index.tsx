@@ -4,32 +4,32 @@ import { getPatient } from "../../../../../services/functions";
 
 const ServiceCard = () => {
   const patientObj = {
-    name: '',
-    birthdate: '',
-    profession: '',
-    schooling: '',
-    personalAnnotations: '',
-    _id: ''
-  }
-  const [patient, setPatient] = useState(patientObj)
+    name: "",
+    birthdate: "",
+    profession: "",
+    schooling: "",
+    personalAnnotations: "",
+    _id: "",
+  };
+  const [patient, setPatient] = useState(patientObj);
   const getUser = async () => {
     const id = localStorage.getItem("patient_id");
-    if(id === null){
-      console.log('Usuário não encontrado')
+    if (id === null) {
+      console.log("Usuário não encontrado");
       return;
     }
     const currentPatient = await getPatient(id);
     return setPatient(currentPatient.data);
   };
   useEffect(() => {
-    getUser()
-  }, [])
+    getUser();
+  }, []);
 
   return (
     <div className="sideCard">
       <div className="buttonSide">
-          <ModalService name={patient.name} id={patient._id}/>
-        </div>
+        <ModalService name={patient.name} id={patient._id} />
+      </div>
       <div>
         <h4>Serviço</h4>
       </div>
@@ -40,7 +40,7 @@ const ServiceCard = () => {
         </div>
         <div>
           <span>Tipo</span>
-          <p>Porte de arma</p>
+          <p>Tratar estresse e ansiedade</p>
         </div>
       </div>
     </div>

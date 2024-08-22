@@ -1,20 +1,20 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import { getPatient } from "../../../../../services/functions";
 
 const UserCard = () => {
   const patientObj = {
-    name: '',
-    birthdate: '',
-    profession: '',
-    schooling: '',
-    personalAnnotations: ''
-  }
-  const [patient, setPatient] = useState(patientObj)
-  
+    name: "",
+    birthdate: "",
+    profession: "",
+    schooling: "",
+    personalAnnotations: "",
+  };
+  const [patient, setPatient] = useState(patientObj);
+
   const getUser = async () => {
     const id = localStorage.getItem("patient_id");
-    if(id === null){
-      console.log('Usuário não encontrado')
+    if (id === null) {
+      console.log("Usuário não encontrado");
       return;
     }
     const currentPatient = await getPatient(id);
@@ -22,16 +22,16 @@ const UserCard = () => {
   };
 
   const date = () => {
-    const date = new Date(patient.birthdate)
-    let day = date.toLocaleString('pt-BR', { day: '2-digit' })
-    const month = date.toLocaleString('pt-BR', { month: '2-digit' })
-    const year = date.getFullYear()
-    return `${day}/${month}/${year}`
-  }
-  
+    const date = new Date(patient.birthdate);
+    let day = date.toLocaleString("pt-BR", { day: "2-digit" });
+    const month = date.toLocaleString("pt-BR", { month: "2-digit" });
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
+
   useEffect(() => {
-    getUser()
-  }, [])
+    getUser();
+  }, []);
 
   return (
     <div className="sideCard">
@@ -40,28 +40,28 @@ const UserCard = () => {
       </div>
       <div>
         <div>
-          <img src="/side-section/user.svg" width={'14px'} />
-          <span>  Paciente</span>
-          <p>{patient.name}</p>
+          <img src="/side-section/user.svg" width={"14px"} />
+          <span> Paciente</span>
+          <p>Henrique Miguel</p>
         </div>
         <div>
-          <img src="/side-section/date.svg" width={'14px'} />
+          <img src="/side-section/date.svg" width={"14px"} />
           <span> Nascimento</span>
-          <p>{date()}</p>
+          <p>12/04/1987</p>
         </div>
         <div>
-          <img src="/side-section/bag.svg" width={'14px'} />
+          <img src="/side-section/bag.svg" width={"14px"} />
           <span> Profissão</span>
-          <p>{patient.profession}</p>
+          <p>Professor de Matemática</p>
         </div>
         <div>
-          <img src="/side-section/doc.svg" width={'14px'} />
+          <img src="/side-section/doc.svg" width={"14px"} />
           <span> Escolaridade</span>
-          <p>{patient.schooling}</p>
-        </div>                
+          <p>Licenciatura em Matemática</p>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default UserCard
+export default UserCard;
