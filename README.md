@@ -4,14 +4,15 @@
 
 ## Interface para Gerenciamento de Pacientes de Psicólogos
 
-**Wexer Psi** é uma plataforma que oferece aos psicólogos a melhor organização possível com seus pacientes. Através dela, é possível cadastrar pacientes e manter um histórico completo de atendimentos, dividido em quatro tipos principais: sessões, fatos relevantes, anexos e avaliações psicológicas.
-
 ![Wexer Psi](./wexer-psi/src/assets/readme/front-wexer.png)
 
 **Nome do Projeto:** Wexer Psi 📏💡📋  
 **Data de Início do Desenvolvimento:** 20/03/2023 ⏩  
 **Data de Conclusão do Desenvolvimento:** 03/05/2023 🏁  
 **Status:** Concluído ✅
+**Aproveitamento do Projeto:** 78,75% ⚡
+
+**Wexer Psi** é uma plataforma que oferece aos psicólogos a melhor organização possível com seus pacientes. Através dela, é possível cadastrar pacientes e manter um histórico completo de atendimentos, dividido em quatro tipos principais: sessões, fatos relevantes, anexos e avaliações psicológicas.
 
 🚀 **Link de Deploy:** [Vercel Deploy](https://project-wexer.vercel.app/)
 

@@ -2,14 +2,15 @@
 
 ## Interface for Psychologists' Patient Management
 
-**Wexer Psi** is a platform that provides psychologists with the best possible organization for managing their patients. It allows for the registration of patients and the maintenance of a comprehensive history of appointments, categorized into four main types: sessions, relevant facts, attachments, and psychological assessments.
-
 ![Wexer Psi](./wexer-psi/src/assets/readme/front-wexer.png)
 
 **Project Name:** Wexer Psi 📏💡📋  
 **Development Start Date:** 20/03/2023 ⏩  
 **Development Completion Date:** 03/05/2023 🏁  
 **Status:** Completed ✅
+**Project Completion:** 78,75% ⚡
+
+**Wexer Psi** is a platform that provides psychologists with the best possible organization for managing their patients. It allows for the registration of patients and the maintenance of a comprehensive history of appointments, categorized into four main types: sessions, relevant facts, attachments, and psychological assessments.
 
 🚀 **Deployment Link:** [Vercel Deploy](https://project-wexer.vercel.app/)
 
