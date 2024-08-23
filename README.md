@@ -49,7 +49,7 @@ Wexer Psi é uma ferramenta de gestão para psicólogos, que permite o cadastro 
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/LadyJessie19/frutamix-frontend.git
+   git clone https://github.com/LadyJessie19/wexerFrontend.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
@@ -83,3 +83,18 @@ Se você deseja contribuir para o projeto, siga estes passos:
 ## Licença 🧐
 
 Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
+## 🚧 Dados Mockados para Demonstração 🚧
+
+🎉 **Olá, exploradores do Wexer Psi!** 🎉
+
+Para garantir que você possa testar o deploy do **Wexer Psi - Frontend** sem complicações, todos os dados estão **mockados** para fins de demonstração. Isso significa que você pode interagir com a aplicação como se fosse real, sem precisar se preocupar com dados verdadeiros. 😄
+
+🔍 **Como Funciona:**
+
+1. **Clique no botão "Entrar"** para acessar o sistema e explorar a interface. 🚪
+2. **E é isso!** A aplicação no deploy está pronta para uso. 🎉
+
+Essa configuração foi feita para tornar a demonstração mais ágil e acessível para todos. 💡
+
+🔔 **Nota:** Caso veja algum "paciente fictício" ou "informações de teste", lembre-se – é tudo parte do ambiente de demonstração. 🕵️‍♀️
