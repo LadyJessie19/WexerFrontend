@@ -7,7 +7,7 @@
 **Project Name:** Wexer Psi 📏💡📋  
 **Development Start Date:** 20/03/2023 ⏩  
 **Development Completion Date:** 03/05/2023 🏁  
-**Status:** Completed ✅
+**Status:** Completed ✅ <br />
 **Project Completion:** 78,75% ⚡
 
 **Wexer Psi** is a platform that provides psychologists with the best possible organization for managing their patients. It allows for the registration of patients and the maintenance of a comprehensive history of appointments, categorized into four main types: sessions, relevant facts, attachments, and psychological assessments.
@@ -63,6 +63,19 @@ Wexer Psi is a management tool for psychologists, allowing them to register pati
    npm run dev
    ```
 
+## 🚧 Mock Data for Demonstration 🚧
+
+To ensure you can test the **Wexer Psi - Frontend** deployment smoothly, all data is **mocked** for demonstration purposes. This means you can interact with the application as if it were real, without worrying about actual data. 😄
+
+🔍 **How It Works:**
+
+1. **Click the "Entrar" button** to access the system and explore the interface. 🚪
+2. **And that's it!** The deployed application is ready for use. 🎉
+
+This setup was made to make the demonstration quicker and more accessible for everyone. 💡
+
+🔔 **Note:** If you see any "fictitious patients" or "test information," remember – it's all part of the demo environment. 🕵️‍♀️
+
 ## Development Team 🙋‍♀️
 
 <img src="./wexer-psi/src/assets/readme/jessie-dev.jpg" alt="Developer" width="200" />
@@ -82,18 +95,3 @@ If you want to contribute to the project, follow these steps:
 ## License 🧐
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
-## 🚧 Mock Data for Demonstration 🚧
-
-🎉 **Hello, Wexer Psi Explorers!** 🎉
-
-To ensure you can test the **Wexer Psi - Frontend** deployment smoothly, all data is **mocked** for demonstration purposes. This means you can interact with the application as if it were real, without worrying about actual data. 😄
-
-🔍 **How It Works:**
-
-1. **Click the "Login" button** to access the system and explore the interface. 🚪
-2. **And that's it!** The deployed application is ready for use. 🎉
-
-This setup was made to make the demonstration quicker and more accessible for everyone. 💡
-
-🔔 **Note:** If you see any "fictitious patients" or "test information," remember – it's all part of the demo environment. 🕵️‍♀️
