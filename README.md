@@ -74,7 +74,7 @@ Para garantir que você possa testar o deploy do **Wexer Psi - Frontend** sem co
 1. **Clique no botão "Entrar"** para acessar o sistema e explorar a interface. 🚪
 2. **E é isso!** A aplicação no deploy está pronta para uso. 🎉
 
-Essa configuração foi feita para tornar a demonstração mais ágil e acessível para todos. 💡
+💡 Essa configuração foi feita para tornar a demonstração mais ágil e acessível para todos.
 
 🔔 **Nota:** Caso veja algum "paciente fictício" ou "informações de teste", lembre-se – é tudo parte do ambiente de demonstração. 🕵️‍♀️
 
